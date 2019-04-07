@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+
+/* 0. overall page setting */
+/* divide into 7 blocks */
+body{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+}
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+/* 1. top fanpage */
+.fanpage{
+	/*height: 50px;*/
+	background-color: #f6f6f6;
+	margin-top: 20px;
+}
+
+.fanpage ul{
+	float: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.fanpage ul li{
+	float: left;
+	margin-right: 10px;
+}
+
+.fanpage a{
+	text-decoration: none;
+}
+
+.fanpageFacebook{
+	color: #687eb1;
+	margin-left: 5px;
+	border-right: 1px solid #cccccc;
+	padding-right: 10px;
+}
+
+.fanpageTwitter{
+	color: #00aaec;
+	margin-left: 5px;
+}
+
+/* 2. topmenu */
+.topmenu{
+	margin-top: 10px;
+	box-shadow: 1px 3px 5px gray;	
+}
+
+.topmenu h1 a{
+	/* for SearchEngine */
+	background-image: url("../img/logo_green.png");
+	background-repeat: no-repeat;
+	width: 171px;
+	height: 50px;
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+}
+
+.topmenu ul{
+	float: right;
+}
+
+.topmenu ul li{
+	float: left;
+	margin-right: 20px;
+}
+
+.topmenu ul li a{
+	color: #00cc99;
+	text-decoration: none;
+	display: block;
+	width: 80px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.topmenu ul li a:hover{
+	border-bottom: 4px solid #00cc99;
+}
+
+@media(max-width: 767px){
+	.topmenu{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.topmenu h1 a{
+		float: none;
+		margin: 0 auto;
+	}
+	.topmenu ul{
+		float: none;
+	}
+
+	.topmenu ul li{
+		width: 50%;
+		margin: 0;
+	}
+	.topmenu ul li a{
+		width: 100%;
+		height: 50px;
+	}
+}
+
+/* 4. three characters of hexschool*/
+.imgdesc{
+	max-width: 900px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.imgdesc img{
+	width: 100%;
+}
+
+.imgdesc ul li{
+	float: left;
+	width: 240px;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	box-shadow: 1px 3px 5px gray;
+}
+
+.imgdesc ul li ul li{
+	list-style: disc;
+	box-shadow: 0px 0px 0px;
+	padding: 6px;
+}
+
+.imgdesc h2{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.imgdesc p{
+	line-height: 25px;
+}
+
+
+@media(max-width: 767px){
+}

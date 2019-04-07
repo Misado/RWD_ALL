@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset for RWD */
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+.header{
+	height: 80px;
+	background-color: #000;
+}
+
+.wrap{
+	margin: 0 auto;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+
+.container{
+	max-width: 600px;
+	margin: 0 auto;
+}
+.container p{
+	color: #fff;
+	line-height: 80px;
+	text-indent: 2em;
+}
+
+.box{
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+	float: left;
+	margin-top: 10px;
+}
+
+.logo{
+	width: 76px;
+	height: 75px;
+	margin: 1% auto;
+	background: url("../img/lovetty.png") no-repeat;
+}
+
+
+
+.news li{
+	width: 98%;
+	margin: 5% 1%;
+	padding: 2%;
+	border: 1px solid #000;
+}
+
+.news h2{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.news img{
+	width: 50%;
+	margin: 0 25%;
+}
+
+.news p{
+	text-indent: 2em;
+}
+
+@media(min-width: 768px){
+	.logo{
+		width: 246px;
+		height: 78px;
+		background: url("../img/lovetty_M.png") no-repeat;
+	}
+	.news li{
+		width: 48%;
+		margin: 5% 1%;
+		float: left;
+	}
+	.news img{
+		width: 70%;
+		margin: 0 15%;
+	}
+}
+
+@media(min-width: 960px){
+	.wrap{
+		max-width: 960px;
+	}
+
+	.news li{
+		width: 31.33333%;
+		margin: 5% 1%;
+		float: left;
+	}
+
+	.news img{
+		width: 80%;
+		margin: 0 10%;
+	}
+}
