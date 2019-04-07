@@ -134,7 +134,7 @@ img{
 		float: left;
 	}
 	.news img{
-		width: 70%;
+		/*width: 70%;*/
 		margin: 0 15%;
 	}
 }

@@ -52,8 +52,8 @@ table {
 	box-sizing: border-box;
 }
 img{
-	max-width: 100%;
-	height: auto ;
+	/*max-width: 100%;
+	height: auto ;*/
 }
 
 .clearfix:after{
@@ -78,6 +78,14 @@ body{
 	background-color: red;
 }
 
+.banner{
+	height: 323px;
+	background-color: #101125;
+	background-image: url("../img/banner_TY.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 .content{
 	width: 50%;
 	margin: 5% auto;	
@@ -90,9 +98,25 @@ body{
 }
 
 .footer{
-	height: 50px;
-	background-color: blue;
+	/*width: 50%;
+	margin: 0 auto;*/
+	margin-top: 10px;
+	width: 500px;
+	height: 500px;
+	background: url("../img/iconfinder_computer_118848.svg");
+	background-size: contain;
 }
+
+.footer a{
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/*.footer img{
+	max-width: 100%;
+}*/
 
 
 
