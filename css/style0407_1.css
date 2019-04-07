@@ -74,8 +74,43 @@ body{
 }
 
 .header{
-	height: 50px;
-	background-color: red;
+	/*height: 50px;
+	background-color: red;*/
+	width: 100%;
+}
+
+.menu{
+	margin: 20px auto;
+}
+
+.menu li{
+	width: 16.66666%;
+	/*margin: 0 30px;*/
+	border: 2px solid #fff;
+	float: left;
+}
+
+.menu li a{
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #101125;
+	color: #fff;
+}
+
+@media(max-width: 768px){
+	.menu li{
+		width: 33.33333%;
+	}
+}
+
+@media(max-width: 320px){
+	.menu li{
+		float: none;
+		width: 50%;
+		margin: 0 25%;
+	}
 }
 
 .banner{
@@ -114,12 +149,14 @@ body{
 	overflow: hidden;
 }
 
-/*.footer img{
+.footer img{
 	max-width: 100%;
-}*/
+}
 
 
 
 .content label,.content button{
 	margin-top: 10px;
 }
+
+
