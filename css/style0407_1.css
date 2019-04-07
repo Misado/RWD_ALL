@@ -77,16 +77,22 @@ body{
 	/*height: 50px;
 	background-color: red;*/
 	width: 100%;
+	/*height: 80px;*/
+	border: 1px solid #fff;
+	position: relative;
+	background-color: #101125;
+	border-bottom: 2px solid #fff;
 }
 
 .menu{
 	margin: 20px auto;
+	transition: all 2.3s;
 }
 
 .menu li{
 	width: 16.66666%;
 	/*margin: 0 30px;*/
-	border: 2px solid #fff;
+	/*border: 2px solid #fff;*/
 	float: left;
 }
 
@@ -97,19 +103,54 @@ body{
 	text-decoration: none;
 	background-color: #101125;
 	color: #fff;
+	transition: all 0.5s;
 }
 
-@media(max-width: 768px){
+.menu li a:hover{
+	background: orange;
+}
+
+.showmenu{
+	display: none;
+}
+
+@media(max-width: 767px){
 	.menu li{
 		width: 33.33333%;
 	}
 }
 
 @media(max-width: 320px){
-	.menu li{
+	/*.menu li{
 		float: none;
 		width: 50%;
 		margin: 0 25%;
+	}*/
+	.showmenu{
+		display: block;
+		margin: 5px;
+	}
+	.showmenu img{
+		max-width: 50px;
+	}
+	.menu{
+		position: absolute;
+		top: 65px;
+		left: 0;
+		right: 0;
+		max-height: 0;
+		overflow: hidden;
+		margin: 0;
+		background-color: #101125;
+	}
+	.menu li{
+		width: 100%;
+		float: none;
+		border: 0;
+		border-bottom: 1px dashed #fff;
+	}
+	.menu-show .menu{
+	    max-height: 500px;
 	}
 }
 
