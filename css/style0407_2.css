@@ -82,6 +82,10 @@ body{
 	position: relative;
 	background-color: #31af91;
 	border-bottom: 2px solid #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 .menu{
@@ -114,42 +118,10 @@ body{
 	display: none;
 }
 
-@media(max-width: 767px){
-	.showmenu{
-		display: block;
-		float: right;
-	}
-	.showmenu img{
-		max-width: 50px;
-	}
-	.menu{
-		max-height: 0;
-		overflow: hidden;
-		position: absolute;
-		top: 57px;
-		left: 0;
-		right: 0;
 
-		margin: 0 auto;
-		
-	}
-	.menu li{
-		float: none;
-		width: 100%;
-		border-bottom: 1px dashed #fff;
-	}
-	.menu li a{
-		background-color: rgba(0,0,0,0.5);
-	}
-	.menu li a:hover{
-		background-color: #31af91;
-	}
-	.menu-show .menu{
-		max-height: 500px;
-	}
-}
 
 .banner{
+	margin-top: 82px;
 	height: 426px;
 	background-color: #101125;
 	background-image: url("../img/TTY_cute.jpg");
@@ -201,3 +173,41 @@ body{
 }
 
 
+@media(max-width: 767px){
+	.showmenu{
+		display: block;
+		float: right;
+	}
+	.showmenu img{
+		max-width: 50px;
+	}
+	.menu{
+		max-height: 0;
+		overflow: hidden;
+		position: absolute;
+		top: 57px;
+		left: 0;
+		right: 0;
+
+		margin: 0 auto;
+		
+	}
+	.menu li{
+		float: none;
+		width: 100%;
+		border-bottom: 1px dashed #fff;
+	}
+	.menu li a{
+		background-color: rgba(0,0,0,0.5);
+	}
+	.menu li a:hover{
+		background-color: #31af91;
+	}
+	.menu-show .menu{
+		max-height: 500px;
+	}
+
+	.banner{
+		margin-top: 52px;
+	}
+}
