@@ -80,12 +80,12 @@ body{
 	/*height: 80px;*/
 	border: 1px solid #fff;
 	position: relative;
-	background-color: #101125;
+	background-color: #31af91;
 	border-bottom: 2px solid #fff;
 }
 
 .menu{
-	margin: 20px auto;
+	margin: 10px auto;
 	transition: all 2.3s;
 }
 
@@ -98,10 +98,10 @@ body{
 
 .menu li a{
 	display: block;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 	text-decoration: none;
-	background-color: #101125;
+	background-color: #31af91;
 	color: #fff;
 	transition: all 0.5s;
 }
@@ -115,49 +115,44 @@ body{
 }
 
 @media(max-width: 767px){
-	.menu li{
-		width: 33.33333%;
-	}
-}
-
-@media(max-width: 320px){
-	/*.menu li{
-		float: none;
-		width: 50%;
-		margin: 0 25%;
-	}*/
 	.showmenu{
 		display: block;
-		margin: 5px;
+		float: right;
 	}
 	.showmenu img{
 		max-width: 50px;
 	}
 	.menu{
-		position: absolute;
-		top: 65px;
-		left: 0;
-		right: 0;
 		max-height: 0;
 		overflow: hidden;
-		margin: 0;
-		background-color: #101125;
+		position: absolute;
+		top: 57px;
+		left: 0;
+		right: 0;
+
+		margin: 0 auto;
+		
 	}
 	.menu li{
-		width: 100%;
 		float: none;
-		border: 0;
+		width: 100%;
 		border-bottom: 1px dashed #fff;
 	}
+	.menu li a{
+		background-color: rgba(0,0,0,0.5);
+	}
+	.menu li a:hover{
+		background-color: #31af91;
+	}
 	.menu-show .menu{
-	    max-height: 500px;
+		max-height: 500px;
 	}
 }
 
 .banner{
-	height: 323px;
+	height: 426px;
 	background-color: #101125;
-	background-image: url("../img/banner_TY.jpg");
+	background-image: url("../img/TTY_cute.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -168,8 +163,13 @@ body{
 }
 
 .content h2{
-	color: red;
+	color: #31af91;
 	font-size: 30px;
+	text-align: center;
+	margin: 10px auto;
+}
+
+.content legend{
 	text-align: center;
 }
 
