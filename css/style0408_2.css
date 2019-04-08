@@ -77,12 +77,12 @@ body{
 
 .wrap{	
 	margin: 0 auto;
+	transition: all 0.8s;
 }
 
 .header{
 	background-color: #31af91;
 	height: 50px;
-	transition: all 0.8s;
 }
 
 .menu{
@@ -122,13 +122,11 @@ body{
 	background-image: url("../img/TTY_cute.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
-	transition: all 0.8s;
 }
 
 .content{
 	width: 50%;
 	margin: 5% auto;	
-	transition: all 0.8s;
 }
 
 .content h2{
@@ -158,25 +156,32 @@ body{
 	background: #31af91;
 
 	transition: all 0.8s;
+	padding-top: 20px;
 }
 .aside li{
-	width: 80%;
-	margin: 10% auto;
+	width: 50%;
+	margin: 0 auto;
 }
 
 .aside li a{
 	display: block;
 	text-decoration: none;
 	color: #fff;
-	padding: 10%;
-	text-align: center;
+	padding: 10px;
+	text-align: left;
+	border-left: 2px solid #fff;
+	margin: 20px auto;
 }
 
 .aside li a:hover{
 	background-color: orange;
+	transition: all 0.3s;
 }
 
 @media(max-width: 767px){
+	.aside{
+		overflow: hidden scroll;
+	}
 	.showmenu{
 		display: block;
 	}
@@ -186,17 +191,12 @@ body{
 	.menu{
 		display: none;
 	}
-	.banner{
-		margin: 0;
-	}
-	
-	
+
 	.open .aside{
 		display: block;
 		transform: translateX(0px);
 	}
-
-	.open .header,.open .banner,.open .content{
+	.open .wrap{
 		transform: translateX(270px);
 	}
 }
