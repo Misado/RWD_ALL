@@ -159,7 +159,7 @@ body{
 	padding-top: 20px;
 }
 .aside li{
-	width: 50%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@ body{
 	display: block;
 	text-decoration: none;
 	color: #fff;
-	padding: 10px;
+	padding: 10%;
 	text-align: left;
 	border-left: 2px solid #fff;
 	margin: 20px auto;
