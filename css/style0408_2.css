@@ -52,8 +52,8 @@ table {
 	box-sizing: border-box;
 }
 img{
-	/*max-width: 100%;
-	height: auto ;*/
+	max-width: 100%;
+	height: auto ;
 }
 
 .clearfix:after{
@@ -68,56 +68,37 @@ body{
 
 /* CSS reset END */
 
-.wrap{
+.container{
 	max-width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.wrap{	
 	margin: 0 auto;
 }
 
-	/*height: 50px;
-	background-color: red;*/
-	/*width: 100%;*/
-	/*height: 80px;*/
-	/*border-bottom: 2px solid #fff;*/
-/*.header{
-	border: 1px solid #fff;
-	position: relative;
-	background-color: #31af91;
-	
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	transition: all 0.8s;
-}*/
-
 .header{
-	
 	background-color: #31af91;
-	position: fixed;
-	top: 0;
-
-	left: 0;
-	right: 0;
-
+	height: 50px;
 	transition: all 0.8s;
 }
 
 .menu{
-	margin: 10px auto;
+	margin: 0px auto;
 	transition: all 2s;
 }
 
 .menu li{
 	width: 16.66666%;
-	/*margin: 0 30px;*/
-	/*border: 2px solid #fff;*/
 	float: left;
 	padding: 5px;
 }
 
 .menu li a{
 	display: block;
-	padding: 20px;
+	padding: 10px;
 	text-align: center;
 	text-decoration: none;
 	background-color: #31af91;
@@ -136,7 +117,6 @@ body{
 
 
 .banner{
-	margin-top: 82px;
 	height: 426px;
 	background-color: #101125;
 	background-image: url("../img/TTY_cute.jpg");
@@ -162,28 +142,6 @@ body{
 	text-align: center;
 }
 
-/*
-.footer{
-	margin-top: 10px;
-	width: 500px;
-	height: 500px;
-	background: url("../img/iconfinder_computer_118848.svg");
-	background-size: contain;
-}
-
-.footer a{
-	display: block;
-	text-indent: 101%;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-.footer img{
-	max-width: 100%;
-}
-*/
-
-
 .content label,.content button{
 	margin-top: 10px;
 }
@@ -192,7 +150,8 @@ body{
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 270px;	
+	width: 270px;
+
 	transform: translateX(-270px);
 	overflow: hidden;
 
@@ -227,35 +186,8 @@ body{
 	.menu{
 		display: none;
 	}
-	/*
-	.menu{
-		max-height: 0;
-		overflow: hidden;
-		position: absolute;
-		top: 57px;
-		left: 0;
-		right: 0;
-
-		margin: 0 auto;
-		
-	}
-	.menu li{
-		float: none;
-		width: 100%;
-		border-bottom: 1px dashed #fff;
-	}
-	.menu li a{
-		background-color: rgba(0,0,0,0.5);
-	}
-	.menu li a:hover{
-		background-color: #31af91;
-	}
-	.menu-show .menu{
-		max-height: 500px;
-	}
-	*/
 	.banner{
-		margin-top: 52px;
+		margin: 0;
 	}
 	
 	
@@ -268,25 +200,3 @@ body{
 		transform: translateX(270px);
 	}
 }
-
-/*
-.aside{
-	transform: translateX(-370px);
-	width: 370px;
-	background-color: green;
-	overflow: hidden;
-}
-
-
-@media(max-width: 320px){
-	.menu{
-		display: none;
-	}
-	.open .header,.open .banner,.open .content{
-		transform: translateX(370px);
-	}
-	.open .aside{
-		display: block;
-		transform: translateX(0px);
-	}
-}*/
