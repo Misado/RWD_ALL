@@ -66,6 +66,7 @@ img{
 
 body{
 	font-family: 微軟正黑體;
+	background-color: #000;
 }
 
 .wrap{
@@ -78,6 +79,86 @@ body{
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 60px;
+	
+	background-color: rgba(0,0,0,0.8);
+}
+
+.logo h1 a{
+	/* for SearchEngine */
+	background-image: url("../img/logo_w@svg.svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 120px;
+	height: 40px;
+	margin: 10px 20px;
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+}
+
+.navbar ul{
+	float: right;
+}
+
+.navbar li{
+	float: left;
+}
+
+.navbar li a{
+	display: block;
+	padding: 20px;
+	margin-right: 20px;
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.navbar li a:hover,.navbar li a:focus{
+	background-color: orange;
+}
+
+.banner{
+	margin-top: 60px;
 	background-color: #000;
+	position: relative;
+	z-index: 1;
+}
+
+.bannerMask{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px;
+	color: #fff;
+	position: absolute;
+	z-index: 2;
+	top: 30%;
+	width: 50%;
+	margin: 0 25%;
+	text-align: center;
+}
+
+.bannerMask h2{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.bannerMask p{
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.bannerMask .symbol{
+	margin: 0 5px;
+}
+
+.imgDesc{
+	margin: 30px auto;
+
+	background-color: #fff;
+}
+
+.imgDesc h2{
+	font-size: 18px;
+	text-align: center;
 }
