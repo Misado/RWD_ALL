@@ -68,3 +68,16 @@ body{
 	font-family: 微軟正黑體;
 }
 
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: #000;
+}
