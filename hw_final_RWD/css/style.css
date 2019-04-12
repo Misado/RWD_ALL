@@ -66,7 +66,7 @@ img{
 
 body{
 	font-family: 微軟正黑體;
-	background-color: #000;
+	/*background-color: #000;*/
 }
 
 .wrap{
@@ -79,13 +79,13 @@ body{
 	top: 0;
 	left: 0;
 	right: 0;
-	
+	z-index: 999;
 	background-color: rgba(0,0,0,0.8);
 }
 
 .logo h1 a{
 	/* for SearchEngine */
-	background-image: url("../img/logo_w@svg.svg");
+	background-image: url("../img/logo_w(null).svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: 120px;
@@ -158,7 +158,150 @@ body{
 	background-color: #fff;
 }
 
+.imgDesc hr{
+	display: inline-block;
+	margin-left: 30%;
+}
 .imgDesc h2{
 	font-size: 18px;
 	text-align: center;
+}
+
+.imgDesc li{
+	float: left;
+	width: 31.33333%;
+	margin: 1%;
+	background-color: #fff;
+	text-align: center;
+}
+
+.imgDesc li h3{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.imgDesc li p{
+	text-align: justify;
+	font-size: 14px;
+	text-indent: 2em;
+	padding: 5%;
+}
+
+.chefInfo{
+	margin-bottom: 20px;
+}
+
+.chefInfo li{
+	float: left;
+	width: 48%;
+	margin: 1%;
+
+}
+.chefInfo li p{
+	padding: 10px;
+	line-height: 1.5;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+.chefInfo h2{
+	font-size: 20px;
+}
+
+.feedbackMsg h2{
+	text-align: center;
+	font-size: 18px;
+}
+
+.feedbackMsg h3{
+	text-align: right;
+	font-size: 14px;
+}
+
+.msgBlock{
+	width: 31.33333%;
+	margin: 5% 1%;
+	float: left;
+}
+
+.msgBlock span{
+	font-size: 16px;
+	padding-left: 1em;
+}
+
+.msgBlock p{
+	margin-top: 10px;
+	padding-left: 5.5em;
+	font-size: 14px;
+}
+
+.orderForm{
+	margin-top: 20px;
+}
+
+.orderForm h2{
+	text-align: center;
+	font-size: 18px;
+}
+
+.orderForm li{
+	width: 48%;
+
+	margin: 20px 1%;
+	float: left;
+}
+
+.orderForm .inputSetting{
+	width: 98%;
+	margin: 1% 1%;
+	font-size: 14px;
+	font-family: 微軟正黑體;
+}
+
+.orderForm iframe{
+	width: 350px;
+	height: 250px;
+	margin-top: 20px;
+}
+
+.footer{
+	margin: 40px auto;
+}
+
+.restInfo{
+	float: left;
+	width: 31.33333%;
+	margin: auto 1%;
+}
+
+.restInfo p{
+	text-indent: 2em;
+}
+
+.restInfo li{
+	list-style: disc;
+	list-style-position: inside;
+}
+
+.restInfologo{
+	float: right;
+	background-image: url("../img/logo_l(null).svg");
+	background-repeat: no-repeat;
+	width: 243px;
+	height: 48px;
+	margin-right: 20px;
+}
+
+.restInfologo ul{
+	float: right;
+}
+
+.restInfologo ul li{
+	float: left;
+}
+
+.restInfologo img{
+	width: 24px;
+	height: auto;
+	margin-top: 60px;
+	margin-left: 10px;
 }
