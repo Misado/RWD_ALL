@@ -306,10 +306,7 @@ body{
 }
 
 .radioItem input[type='radio']:checked:after {
-
     border-radius: 11px;
-    top: -1px;
-    left: 0;
     background-color: #4a90e2;
     border: 5px solid #fff;
 }
