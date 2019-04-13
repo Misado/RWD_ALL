@@ -69,12 +69,28 @@ body{
 	/*background-color: #000;*/
 }
 
+/* 統一字型大小 h2~h6,p {font-size} */
+h2{	font-size: 30px; }
+h3{	font-size: 24px; }
+h4{ font-size: 20px; }
+h5{	font-size: 18px; }
+h6{	font-size: 16px; }
+p{	font-size: 14px;
+	line-height: 1.5;
+	text-align: justify;
+	text-indent: 2em; }
+
 table td{
 	/*border: 1px solid #000;*/
 	width: 200px;
 	height: 100px;
 	vertical-align: middle;
 	text-align: center;
+}
+
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
 }
 
 .featureTableSet{
@@ -172,10 +188,13 @@ table td{
       padding: 0;
     }*/
 .swiper-container {
-      max-width: 960px;
-      height: 200px;
+      /*max-width: 960px;
+      height: 200px;*/
+      width: 100%;
+      height: 100%;
     }
 .swiper-slide {
+	/*overflow: hidden;*/
 	width: 31.33333%;
 	margin: 0 1%;
   text-align: center;
@@ -194,4 +213,41 @@ table td{
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+.banner{
+	margin-top: 60px;
+	background-color: #000;
+	position: relative;
+	z-index: 1;
+
+}
+
+.banner img{
+	max-width: 100%;
+	height: auto;
+}
+
+.bannerMask{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px;
+	color: #fff;
+	position: absolute;
+	z-index: 999;
+	top: 30%;
+	width: 50%;
+	margin: 0 25%;
+	text-align: center;
+}
+
+.bannerMask h2{
+	margin-bottom: 10px;
+}
+
+.bannerMask h5{
+	line-height: 1.5;
+}
+
+.bannerMask .symbol{
+	margin: 0 5px;
 }
