@@ -9,7 +9,7 @@ $(document).ready(function() {
 		},*/
 		breakpoints: {
 	    // when window width is <= 320px
-	    374: {
+	    413: {
 	      slidesPerView: 1,
 	      spaceBetween: 0
 	    },

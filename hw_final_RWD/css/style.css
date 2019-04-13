@@ -111,7 +111,7 @@ p{	font-size: 14px;
 
 .navbar{
 	position: relative;
-	transition: all 2.3s;
+	transition: all 2s;
 }
 
 .navbar ul{
@@ -124,8 +124,8 @@ p{	font-size: 14px;
 
 .navbar li a{
 	display: block;
-	padding: 20px;
-	margin-right: 20px;
+	padding: 20px 10px;
+	margin-right: 10px;
 	text-decoration: none;
 	color: #fff;
 	transition: all 0.3s;
@@ -139,7 +139,7 @@ p{	font-size: 14px;
 	display: none;
 }
 
-@media(max-width: 374px){
+@media(max-width: 413px){
 	.showmenu{
 		display: block;
 		float: right;
@@ -181,9 +181,9 @@ p{	font-size: 14px;
 	color: #fff;
 	position: absolute;
 	z-index: 997;
-	top: 30%;
-	width: 50%;
-	margin: 0 25%;
+	top: 20%;
+	width: 96%;
+	margin: 0 2%;
 	text-align: center;
 }
 
@@ -207,17 +207,12 @@ p{	font-size: 14px;
 	z-index: 1;
 }
 
-@media(max-width: 374px){
+@media(max-width: 413px){
 	.banner{
 		display: none;
 	}
 	.bannerMobile{
 		display: block;
-	}
-	.bannerMask{
-		width: 96%;
-		margin: 0 2%;
-		top: 10%;
 	}
 }
 
@@ -251,7 +246,7 @@ p{	font-size: 14px;
 	padding: 5%;
 }
 
-@media(max-width: 374px){
+@media(max-width: 413px){
 	.featureDesc li{
 		width: 98%;
 	}
@@ -262,15 +257,35 @@ p{	font-size: 14px;
 	margin: 0 10%;
 }
 
-.featureTableSet td{
+/*.featureTableSet td{
 	width: 33.33333%;
 	padding: 20px 0;
 	vertical-align: middle;
 	text-align: center;
-}
+}*/
 
 .featureTableSet hr{
 	width: 50%;
+}
+
+.featureTableSet li{
+	float: left;
+	width: 31.33333%;
+	margin: 30px 1%;
+	text-align: center;
+}
+
+.featureTableHR{
+	width: 20%;
+}
+
+@media(max-width: 413px){
+	.featureTableSet li{
+		width: 98%;
+	}
+	.featureTableHR{
+		display: none;
+	}
 }
 
 .chefInfo{
@@ -280,11 +295,12 @@ p{	font-size: 14px;
 }
 
 
-.chefInfo td{
+.chefInfo li{
+	float: left;
 	width: 46%;
 	margin: 2%;
 	padding: 2%;
-	vertical-align: middle;
+
 	text-align: center;
 
 }
@@ -299,6 +315,12 @@ p{	font-size: 14px;
 
 .chefInfo span{
 	font-size: 16px;
+}
+
+@media(max-width: 413px){
+	.chefInfo li{
+		width: 96%;
+	}
 }
 
 .feedbackMsg{
@@ -386,7 +408,7 @@ p{	font-size: 14px;
 	float: left;
 }
 
-@media(max-width: 374px){
+@media(max-width: 413px){
 	.orderForm li{
 		width: 98%;
 	}
@@ -492,7 +514,7 @@ p{	font-size: 14px;
 	margin-left: 10px;
 }
 
-@media(max-width: 374px){
+@media(max-width: 413px){
 	.restInfo{
 		width: 94%;
 	}

@@ -13,10 +13,8 @@ $(document).ready(function() {
 	$(".banner").cycle({
 		fx: 'fade',
 		speed: 3000,
-		autoplay: false;
+		autoplay: false,
 	});
 
-	$(".bannerMobile img").attr({
-		src: 'img/TTY_First.png',
-	});
+
 });
