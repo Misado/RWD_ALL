@@ -8,8 +8,10 @@ $(document).ready(function() {
 			delay: 5000,
 		},
 	});
-	/*$(".swiper-slide,.swiper-slide-active,.swiper-slide-prev,.swiper-slide-next").css("margin-right","0").css("margin","20px 1%");
-	$(".swiper-slide,.swiper-slide-active,.swiper-slide-prev,.swiper-slide-next").css("width","31.33333%");*/
 
-	
+	// Banner Cycle setting
+	$(".banner").cycle({
+		fx: 'fade',
+		speed: 3000,
+	});
 });

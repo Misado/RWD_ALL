@@ -142,7 +142,7 @@ p{	font-size: 14px;
 	padding: 20px;
 	color: #fff;
 	position: absolute;
-	z-index: 2;
+	z-index: 998;
 	top: 30%;
 	width: 50%;
 	margin: 0 25%;
@@ -175,6 +175,11 @@ p{	font-size: 14px;
 	width: 31.33333%;
 	margin: 1%;
 	text-align: center;
+}
+
+.featureDesc img{
+	border-radius: 50%;
+	border: 5px solid #fff;
 }
 
 .featureDesc li h4{
@@ -247,7 +252,7 @@ p{	font-size: 14px;
 .feedbackMsgBlock p{
 	text-indent: 0;
 	margin-top: 10px;
-	padding-left: 3em;
+	padding-left: 5.5em;
 }
 
 .feedbackTitle{
