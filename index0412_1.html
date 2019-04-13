@@ -8,6 +8,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/all.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -123,25 +124,11 @@
 	  <script src="../dist/js/swiper.min.js"></script>-->
 
 	  <!-- Initialize Swiper -->
-	  <script>
-	    var swiper = new Swiper('.swiper-container', {
-	      slidesPerView: 3,
-	      spaceBetween: 30,
-	      loop: true,
-	      pagination: {
-	        el: '.swiper-pagination',
-	        clickable: true,
-	        loop: true,
-	      },
-	      /*autoplay: {
-		    delay: 5000,
-		 },*/
-	    });
-	  </script>
+
 
 	  <div class="banner">
-			<img src="img/header_desktop.png">
-			<img src="img/pancake-with-chocolate.jpg">
+			<img class="bannerPC" src="img/header_desktop.png">
+			<img class="bannerPC" src="img/pancake-with-chocolate.jpg">
 			<img src="img/red-curry.jpg">
 			<div class="bannerMask">
 				<h2>咬一口就無法忘懷的漢堡</h2>
@@ -151,10 +138,6 @@
 		</div>
 	</div>
 
-	<script>
-	    $(".banner").cycle({
-			fx: 'fade',
-		});
-	  </script>
+
 </body>
 </html>

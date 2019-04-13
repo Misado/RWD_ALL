@@ -90,8 +90,8 @@ p{	font-size: 14px;
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 999;
-	background-color: rgba(0,0,0,0.8);
+	z-index: 998;
+	background-color: #000;
 }
 
 .logo h1 a{
@@ -107,6 +107,11 @@ p{	font-size: 14px;
 	white-space: nowrap;
 	overflow: hidden;
 	float: left;
+}
+
+.navbar{
+	position: relative;
+	transition: all 2.3s;
 }
 
 .navbar ul{
@@ -130,6 +135,39 @@ p{	font-size: 14px;
 	background-color: orange;
 }
 
+.showmenu{
+	display: none;
+}
+
+@media(max-width: 374px){
+	.showmenu{
+		display: block;
+		float: right;
+	}
+	.navbar{
+		max-height: 0;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 61px;
+		background-color: #000;
+	}
+	.navbar ul{
+		float: none;
+	}
+
+	.navbar li{
+		float: none;
+	}
+	.navbar li a{
+		margin-right: 0;
+	}
+	.mobile .navbar{
+		max-height: 500px;
+	}
+}
+
 .banner{
 	margin-top: 60px;
 	background-color: #000;
@@ -142,7 +180,7 @@ p{	font-size: 14px;
 	padding: 20px;
 	color: #fff;
 	position: absolute;
-	z-index: 998;
+	z-index: 997;
 	top: 30%;
 	width: 50%;
 	margin: 0 25%;
@@ -159,6 +197,28 @@ p{	font-size: 14px;
 
 .bannerMask .symbol{
 	margin: 0 5px;
+}
+
+.bannerMobile{
+	display: none;
+	margin-top: 60px;
+	background-color: #000;
+	position: relative;
+	z-index: 1;
+}
+
+@media(max-width: 374px){
+	.banner{
+		display: none;
+	}
+	.bannerMobile{
+		display: block;
+	}
+	.bannerMask{
+		width: 96%;
+		margin: 0 2%;
+		top: 10%;
+	}
 }
 
 .featureDesc{
@@ -189,6 +249,12 @@ p{	font-size: 14px;
 .featureDesc li p{
 	text-align: justify;
 	padding: 5%;
+}
+
+@media(max-width: 374px){
+	.featureDesc li{
+		width: 98%;
+	}
 }
 
 .featureTableSet{
@@ -320,6 +386,12 @@ p{	font-size: 14px;
 	float: left;
 }
 
+@media(max-width: 374px){
+	.orderForm li{
+		width: 98%;
+	}
+}
+
 .orderForm .inputSetting{
 	width: 98%;
 	margin: 1% 1%;
@@ -382,7 +454,7 @@ p{	font-size: 14px;
 .restInfo{
 	float: left;
 	width: 29.33333%;
-	margin: auto 2%;
+	margin: 20px 3%;
 }
 
 .restInfo h4{
@@ -402,7 +474,7 @@ p{	font-size: 14px;
 	background-repeat: no-repeat;
 	width: 243px;
 	height: 48px;
-	margin-right: 20px;
+	margin: 20px;
 }
 
 .restInfologo ul{
@@ -418,4 +490,17 @@ p{	font-size: 14px;
 	height: auto;
 	margin-top: 60px;
 	margin-left: 10px;
+}
+
+@media(max-width: 374px){
+	.restInfo{
+		width: 94%;
+	}
+}
+
+.backtotopBtn{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
 }
