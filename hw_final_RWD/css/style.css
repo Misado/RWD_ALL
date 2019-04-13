@@ -69,6 +69,17 @@ body{
 	/*background-color: #000;*/
 }
 
+/* 統一字型大小 h2~h6,p {font-size} */
+h2{	font-size: 30px; }
+h3{	font-size: 24px; }
+h4{ font-size: 20px; }
+h5{	font-size: 18px; }
+h6{	font-size: 16px; }
+p{	font-size: 14px;
+	line-height: 1.5;
+	text-align: justify;
+	text-indent: 2em; }
+
 .wrap{
 	max-width: 960px;
 	margin: 0 auto;
@@ -139,12 +150,10 @@ body{
 }
 
 .bannerMask h2{
-	font-size: 30px;
 	margin-bottom: 10px;
 }
 
-.bannerMask p{
-	font-size: 18px;
+.bannerMask h5{
 	line-height: 1.5;
 }
 
@@ -154,12 +163,10 @@ body{
 
 .featureDesc{
 	margin: 0 auto;
-
 	background-color: #efe9e7;
 }
 
-.featureDesc h2{
-	font-size: 18px;
+.featureDesc h5{
 	text-align: center;
 }
 
@@ -170,14 +177,12 @@ body{
 	text-align: center;
 }
 
-.featureDesc li h3{
+.featureDesc li h4{
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
 .featureDesc li p{
 	text-align: justify;
-	font-size: 14px;
-	text-indent: 2em;
 	padding: 5%;
 }
 
@@ -198,7 +203,6 @@ body{
 }
 
 .chefInfo{
-	
 	margin: 0 auto;
 	background-color: #3d1101;
 	color: #efe9e7;
@@ -215,14 +219,15 @@ body{
 }
 .chefInfo p{
 	padding: 10px;
-	line-height: 1.5;
-	text-indent: 2em;
 	text-align: justify;
 }
 
-.chefInfo h2{
-	font-size: 20px;
+.chefInfo h4{
 	text-align: left;
+}
+
+.chefInfo span{
+	font-size: 16px;
 }
 
 .feedbackMsg{
@@ -230,41 +235,42 @@ body{
 	color: #3d1101;
 	background-color: #efe9e7;
 }
-.feedbackMsg h2{
+.feedbackMsg h5{
 	text-align: center;
-	font-size: 18px;
 }
 
-.feedbackMsg h3{
-	text-align: right;
-	font-size: 14px;
-}
-
-.msgBlock{
+.feedbackMsgBlock{
 	width: 31.33333%;
-	margin: 5% 1%;
+	margin: 20px 1%;
 	float: left;
 }
 
-.msgBlock span{
-	font-size: 16px;
-	padding-left: 1em;
-}
-
-.msgBlock p{
+.feedbackMsgBlock p{
+	text-indent: 0;
 	margin-top: 10px;
 	padding-left: 5.5em;
-	font-size: 14px;
 }
+
+.feedbackTitle{
+	font-size: 16px;
+	padding-left: 0.5em;
+}
+
+.feedbackSign{
+	display: block;
+	text-align: right;
+}
+
+
+
 
 .orderForm{
 	margin-top: 20px;
 	color: #3d1101;
 }
 
-.orderForm h2{
+.orderForm h5{
 	text-align: center;
-	font-size: 18px;
 }
 
 .orderForm li{
@@ -339,23 +345,15 @@ body{
 	margin: auto 2%;
 }
 
-.restInfo p{
-	font-size: 14px;
-}
-
-.restInfo h3{
-	font-size: 24px;
+.restInfo h4{
 	margin-bottom: 10px;
-}
-
-.restInfo p{
-	text-indent: 2em;
 }
 
 .restInfo li{
 	list-style: disc;
 	list-style-position: inside;
 	font-size: 14px;
+	line-height: 1.5;
 }
 
 .restInfologo{
