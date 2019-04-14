@@ -557,7 +557,8 @@ p{	font-size: 14px;
 .foodMenu{
 	float: left;
 	width: 21%;
-	margin: 30px 2%;
+	margin: 0 2%;
+	padding: 30px;
 }
 
 .foodMenu span{
@@ -569,6 +570,13 @@ p{	font-size: 14px;
 .foodMenu i{
 	font-size: 20px;
 	color: #3d1101;
+}
+
+@media(max-width: 413px){
+	.foodMenu{
+		float: none;
+		width: 96%;
+	}
 }
 
 .foodList{
@@ -598,6 +606,13 @@ p{	font-size: 14px;
 	margin: 20px 2%;
 }
 
+@media(max-width: 413px){
+	.content{
+		float: none;
+		width: 96%;
+	}
+}
+
 .searchInput{
 	float: left;
 	margin-top: 10px;
@@ -616,9 +631,28 @@ p{	font-size: 14px;
 	background-color: #3d1101;
 }
 
+@media(max-width: 480px){
+	.searchInput .pure-button-submit[type="submit"]{
+		margin: 0;
+	}
+}
+
+@media(max-width: 413px){
+	.searchInput{
+		float: none;
+		width: 96%;
+		margin: 0 2%;
+	}
+	.searchInput .pure-form input{
+		float: left;
+		width: 80%;
+	}
+}
+
 .paycartSection ul{
 	float: right;
 	margin-top: 10px;
+	margin-right: 10px;
 }
 
 .paycartSection li{
@@ -671,10 +705,18 @@ p{	font-size: 14px;
 	width: 31.33333%;
 	/*height: 350px;*/
 	margin: 20px 1%;
+	padding-bottom: 10px;
 	float: left;
 	position: relative;
 	background-color: #fff;
 	box-shadow: 1px 1px 5px gray;
+}
+
+@media(max-width: 413px){
+	.cuisineShow li{
+		float: none;
+		width: 98%;
+	}
 }
 
 .cuisineShow img{
