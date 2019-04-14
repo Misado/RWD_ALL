@@ -547,14 +547,19 @@ p{	font-size: 14px;
 
 .foodMenu{
 	float: left;
-	width: 26%;
-	margin: 20px 2%;
+	width: 21%;
+	margin: 30px 2%;
 }
 
 .foodMenu span{
 	color: #3d1101;
 	font-size: 20px;
-	margin-left: 20px;
+	margin-left: 10px;
+}
+
+.foodMenu i{
+	font-size: 20px;
+	color: #3d1101;
 }
 
 .foodList{
@@ -580,7 +585,7 @@ p{	font-size: 14px;
 
 .content{
 	float: left;
-	width: 66%;
+	width: 71%;
 	margin: 20px 2%;
 }
 
@@ -600,6 +605,7 @@ p{	font-size: 14px;
 	background-image: url("../img/search.png");
 	background-color: #3d1101;
 	border-width: 0;
+	cursor: pointer;
 }
 
 .paycartSection ul{
@@ -615,7 +621,7 @@ p{	font-size: 14px;
 
 .gopayText{
 	padding-right: 10px;
-	border-right: 2px solid #3d1101;
+	border-right: 1px solid #3d1101;
 }
 
 .gopayText a{
@@ -631,7 +637,7 @@ p{	font-size: 14px;
 	margin-left: 10px;
 }
 
-.gopayImg span{
+.orderQuantity{
 	font-family: Arial;
 	position: absolute;
 	top: -5px;
@@ -641,4 +647,132 @@ p{	font-size: 14px;
 	border-radius: 50%;
 	font-size: 12px;
 	padding: 2px;
+}
+
+.cuisineShow{
+	margin: 20px auto;
+	text-align: center;
+}
+
+.cuisineShow li{
+	width: 31.33333%;
+	height: 350px;
+	margin: 20px 1%;
+	float: left;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px gray;
+}
+
+.cuisineShow img{
+	height: 120px;
+	width: auto;
+}
+
+.cuisineShow h4{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.cuisineName{
+	font-size: 14px;
+}
+
+.cuisineShow hr{
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.cuisinePrice{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cuisineHeart{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+	padding: 5px;
+}
+
+.cuisineHeart:hover{
+	color: red;
+	cursor: pointer;
+}
+
+/*.addcartBtn{
+	width: 80%;
+	margin: 10px 10%;
+	background-color: rgba(255,255,255,0);
+	border: 2px solid orange;
+	color: orange;
+	font-family: 微軟正黑體;
+}*/
+
+
+
+
+/*
+.addcartBtn{
+	margin: 20px 20px;
+}
+
+.addcartBtn span{
+	margin-left: 10px;
+}
+
+.addcartBtn img{
+	width: 16px;
+	height: auto;
+	float: left;
+}
+
+.addcartBtn a{
+	display: block;
+	width: 120px;
+	height: 40px;
+	background-color: rgba(255,255,255,0);
+	padding: 10px 10px;
+	
+	color: #ff5e45;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	
+	border-radius: 5px;
+	border: 1px solid #ff5e45;
+}
+
+.addcartBtn a:hover{
+	background-color: #ff5e45;
+	color: #fff;
+}
+*/
+
+.addcartBtn a{
+	display: block;
+	background-color: rgba(255,255,255,0);
+	padding: 10px;
+	margin: 10px;
+	
+	color: #ff5e45;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	
+	border-radius: 5px;
+	border: 2px solid #ff5e45;
+}
+
+.addcartBtn a:hover{
+	background-color: #ff5e45;
+	color: #fff;
+}
+
+.addcartBtn .fa-shopping-cart{
+	margin-right: 5px;
 }

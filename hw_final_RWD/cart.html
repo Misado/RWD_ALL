@@ -21,6 +21,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<!-- Cycle lib -->
 	<script src="js/jquery.cycle2.min.js"></script>
+	<!-- Font Awesome lib -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/all.js"></script>
@@ -65,7 +67,7 @@
 			
 			<div class="cartMain clearfix">
 				<div class="foodMenu">
-					<img src="img/foodmenu_icon.png"><span>線上訂購美食</span>
+					<i class="fas fa-leaf"></i><span>線上訂購美食</span>
 					<ul class="foodList">
 						<li><a href="#">全部 (23)</a></li>
 						<li><a href="#">只愛吃薯條 (18)</a></li>
@@ -77,16 +79,67 @@
 					<div class="searchInput clearfix">
 						<form class="pure-form" action="cart.html">
 						    <input type="text" class="pure-input-rounded pure-input-rounded-spec">
-						    <input type="submit" class="searchsubmitBtn">
+						    <input type="submit" class="searchsubmitBtn" value="">🔍
 						</form>
 					</div>
 					<div class="paycartSection clearfix">
 						<ul>
 							<li class="gopayText"><a href="#">結帳去</a></li>
-							<li class="gopayImg"><a href="#"><img src="img/cart.png"><span>12</span></a></li>
+							<li class="gopayImg"><img src="img/cart.png"><span class="orderQuantity">12</span></li>
 						</ul>
 					</div>
-					<div class="cuisineShow">4</div>
+					<div class="cuisineShow clearfix">
+						<ul>
+							<li>
+								<div class="cuisineHeart"><i class="far fa-heart"></i></div>
+								<img src="img/product_1.png">
+								<h4>經典漢堡套餐</h4>
+								<span class="cuisineName">Classic Hamburger Package</span>
+								<hr>
+								<span class="cuisinePrice">$120</span>
+								<div class="addcartBtn">
+									<a href="#">
+									<i class="fas fa-shopping-cart"></i><span>加入購物車</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="cuisineHeart"><i class="far fa-heart"></i></div>
+								<img src="img/product_2.png">
+								<h4>英俊香腸</h4>
+								<span class="cuisineName">Handsome Sausage</span>
+								<hr>
+								<span class="cuisinePrice">$1024</span>
+								<div class="addcartBtn">
+									<a href="#">
+									<i class="fas fa-shopping-cart"></i><span>加入購物車</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="cuisineHeart"><i class="far fa-heart"></i></div>
+								<img src="img/product_3.png">
+								<h4>漢堡兄弟</h4>
+								<span class="cuisineName">Hamburger Brothers</span>
+								<hr>
+								<span class="cuisinePrice">$792</span>
+								<div class="addcartBtn">
+									<a href="#">
+									<i class="fas fa-shopping-cart"></i><span>加入購物車</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="cuisineHeart"><i class="far fa-heart"></i></div>
+								<img src="img/product_1.png">
+								<h4>完美願望</h4>
+								<span class="cuisineName">Dragon Ball Package</span>
+								<hr>
+								<span class="cuisinePrice">$999,999</span>
+								<div class="addcartBtn">
+									<a href="#">
+									<i class="fas fa-shopping-cart"></i><span>加入購物車</span></a>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			
