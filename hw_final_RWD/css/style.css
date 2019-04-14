@@ -542,18 +542,103 @@ p{	font-size: 14px;
 
 .cartMain{
 	background-color: #efe9e7;
+
 }
 
 .foodMenu{
 	float: left;
-	width: 23%;
-	margin: 20px 1%;
+	width: 26%;
+	margin: 20px 2%;
+}
 
-	border-right: 1px solid #000;
+.foodMenu span{
+	color: #3d1101;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.foodList{
+	margin-top: 20px;
+}
+
+.foodList li{
+	
+	border-bottom: 1px solid #3d1101;
+}
+
+.foodList li a{
+	display: block;
+	padding: 10px;
+	color: #3d1101;
+	text-decoration: none;
+}
+
+.foodList li a:hover{
+	background-color: #3d1101;
+	color: #fff;
 }
 
 .content{
 	float: left;
-	width: 73%
-	margin: 20px 1%;
+	width: 66%;
+	margin: 20px 2%;
+}
+
+.searchInput{
+	float: left;
+}
+.pure-input-rounded-spec{
+	float: left;
+	padding: 0;
+	width: 300px;
+}
+.searchsubmitBtn{
+	width: 24px;
+	height: 24px;
+	margin: 8px;
+	float: left;
+	background-image: url("../img/search.png");
+	background-color: #3d1101;
+	border-width: 0;
+}
+
+.paycartSection ul{
+	float: right;
+	margin-top: 10px;
+}
+
+.paycartSection li{
+	float: left;
+	
+	margin-bottom: 5px;
+}
+
+.gopayText{
+	padding-right: 10px;
+	border-right: 2px solid #3d1101;
+}
+
+.gopayText a{
+	display: block;
+	color: #3d1101;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.gopayImg{
+	position: relative;
+	margin-left: 10px;
+}
+
+.gopayImg span{
+	font-family: Arial;
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	background-color: red;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 12px;
+	padding: 2px;
 }
