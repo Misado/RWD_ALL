@@ -557,8 +557,8 @@ p{	font-size: 14px;
 .foodMenu{
 	float: left;
 	width: 21%;
-	margin: 0 2%;
-	padding: 30px;
+	margin: 30px 2%;
+
 }
 
 .foodMenu span{
@@ -576,6 +576,7 @@ p{	font-size: 14px;
 	.foodMenu{
 		float: none;
 		width: 96%;
+		padding: 30px;
 	}
 }
 
