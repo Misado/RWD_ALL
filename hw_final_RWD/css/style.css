@@ -532,11 +532,20 @@ p{	font-size: 14px;
 
 .backtotopBtn{
 	position: fixed;
-	left: 0;
-	bottom: 0;
+	left: 0px;
+	bottom: 0px;
 	z-index: 999;
 }
 
+.backtotopBtn i{
+	font-size: 44px;
+	color: #ff5e45;
+	background-color: #efe9e7;
+}
+
+.backtotopBtn i:hover{
+	color: red;
+}
 
 /* CART.HTML CSS setting */
 
@@ -591,21 +600,20 @@ p{	font-size: 14px;
 
 .searchInput{
 	float: left;
+	margin-top: 10px;
 }
-.pure-input-rounded-spec{
+.searchInput .pure-form input{
 	float: left;
-	padding: 0;
-	width: 300px;
+	width: 250px;
+	font-size: 16px;
+	font-family: 微軟正黑體;
+	border: 1px solid #3d1101;
 }
-.searchsubmitBtn{
-	width: 24px;
-	height: 24px;
-	margin: 8px;
+.searchInput .pure-button-submit{
 	float: left;
-	background-image: url("../img/search.png");
+	font-size: 16px;
+	color: #fff;
 	background-color: #3d1101;
-	border-width: 0;
-	cursor: pointer;
 }
 
 .paycartSection ul{
@@ -637,12 +645,17 @@ p{	font-size: 14px;
 	margin-left: 10px;
 }
 
+.gopayImg i{
+	font-size: 24px;
+	color: #3d1101;
+}
+
 .orderQuantity{
 	font-family: Arial;
 	position: absolute;
 	top: -5px;
 	right: -10px;
-	background-color: red;
+	background-color: #ff5e45;
 	color: #fff;
 	border-radius: 50%;
 	font-size: 12px;
@@ -656,7 +669,7 @@ p{	font-size: 14px;
 
 .cuisineShow li{
 	width: 31.33333%;
-	height: 350px;
+	/*height: 350px;*/
 	margin: 20px 1%;
 	float: left;
 	position: relative;
@@ -675,7 +688,8 @@ p{	font-size: 14px;
 }
 
 .cuisineName{
-	font-size: 14px;
+	font-size: 12px;
+	white-space: nowrap;
 }
 
 .cuisineShow hr{
@@ -695,62 +709,17 @@ p{	font-size: 14px;
 	color: #fff;
 	background-color: rgba(0,0,0,0.8);
 	padding: 5px;
+	cursor: pointer;
 }
 
 .cuisineHeart:hover{
 	color: red;
-	cursor: pointer;
-}
-
-/*.addcartBtn{
-	width: 80%;
-	margin: 10px 10%;
-	background-color: rgba(255,255,255,0);
-	border: 2px solid orange;
-	color: orange;
-	font-family: 微軟正黑體;
-}*/
-
-
-
-
-/*
-.addcartBtn{
-	margin: 20px 20px;
-}
-
-.addcartBtn span{
-	margin-left: 10px;
-}
-
-.addcartBtn img{
-	width: 16px;
-	height: auto;
-	float: left;
-}
-
-.addcartBtn a{
-	display: block;
-	width: 120px;
-	height: 40px;
-	background-color: rgba(255,255,255,0);
-	padding: 10px 10px;
 	
-	color: #ff5e45;
-	font-size: 14px;
-	text-align: center;
-	text-decoration: none;
-	font-weight: bold;
-	
-	border-radius: 5px;
-	border: 1px solid #ff5e45;
 }
 
-.addcartBtn a:hover{
-	background-color: #ff5e45;
-	color: #fff;
+.cuisineHeart .fas{
+	color: red;
 }
-*/
 
 .addcartBtn a{
 	display: block;

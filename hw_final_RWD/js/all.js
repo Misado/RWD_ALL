@@ -42,6 +42,10 @@ $(document).ready(function() {
 	$(".backtotopBtn").click(function(event) {
 		//remove link event
 		event.preventDefault();
-		$("html,body").animate({scrollTop:0}, 1000);
+		$("html,body").animate({scrollTop:0}, 500);
+	});
+
+	$(".cuisineHeart").click(function(event) {
+		$(this).find("i").toggleClass('far fa-heart').toggleClass('fas fa-heart');
 	});
 });
