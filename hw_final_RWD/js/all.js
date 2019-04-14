@@ -45,6 +45,7 @@ $(document).ready(function() {
 		$("html,body").animate({scrollTop:0}, 500);
 	});
 
+	// 空心愛心跟實心愛心互換
 	$(".cuisineHeart").click(function(event) {
 		$(this).find("i").toggleClass('far fa-heart').toggleClass('fas fa-heart');
 	});
