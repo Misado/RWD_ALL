@@ -536,3 +536,24 @@ p{	font-size: 14px;
 	bottom: 0;
 	z-index: 999;
 }
+
+
+/* CART.HTML CSS setting */
+
+.cartMain{
+	background-color: #efe9e7;
+}
+
+.foodMenu{
+	float: left;
+	width: 23%;
+	margin: 20px 1%;
+
+	border-right: 1px solid #000;
+}
+
+.content{
+	float: left;
+	width: 73%
+	margin: 20px 1%;
+}
