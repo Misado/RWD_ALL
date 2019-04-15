@@ -919,3 +919,11 @@ p{	font-size: 14px;
 		margin: 0;
 	}
 }
+
+@media(max-width: 413px){
+	.registerForm li{
+		width: 98%;
+		/*margin: 40px 5%;*/
+		float: none;
+	}
+}
