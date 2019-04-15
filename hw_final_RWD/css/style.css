@@ -800,19 +800,20 @@ p{	font-size: 14px;
 }
 
 
-/* LOGIN.HTML CSS setting */
+/*	LOGIN.HTML & REGISTER.HTML 
+	COMMON CSS setting */
 
-.loginMain{
+.formMain{
 	margin: 40px auto;
 }
-.loginMain h4{
+.formMain h4{
 	text-align: center;
 	font-weight: bold;
 	color: #3d1101;
 
 }
 
-.loginMainlogo{
+.formMainlogo{
 	background-image: url("../img/logo_l(null).svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -821,34 +822,12 @@ p{	font-size: 14px;
 	margin: 10px 10%;
 }
 
-.loginForm{
-	width: 50%;
-	margin: 40px 25%;
-	padding: 10px;
-	box-shadow: 1px 1px 5px gray;
-	border-top: 5px solid #ff5e45;
-}
-
-.loginForm h5{
-	color: #3d1101;
-	font-weight: bold;
-	font-family: Arial Black;
-	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-.loginForm label{
-	color: #3d1101;
-}
-
-
-.loginFormInput{
+.formInput{
 	position: relative;
 	padding-left: 1em;
 }
 
-.loginFormIcon{
+.formIcon{
 	font-size: 16px;
 	position: absolute;
 	left: 0;
@@ -857,28 +836,86 @@ p{	font-size: 14px;
 }
 
 
-.loginFormSpecMsg{
+.formSpecMsg{
 	color: #ff5e45;
 	font-size: 14px;
 }
 
+/* LOGIN.HTML Special CSS setting */
+
+.loginForm,.registerForm{
+	width: 50%;
+	margin: 40px 25%;
+	padding: 10px;
+	box-shadow: 1px 1px 5px gray;
+	border-top: 5px solid #ff5e45;
+}
+
+.loginForm h5,.registerForm h5{
+	color: #3d1101;
+	font-weight: bold;
+	font-family: Arial Black;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.loginForm label,.registerForm label{
+	color: #3d1101;
+}
 
 .loginFormBtn{
 	margin: 20px 2%;
 }
 
-.pure-button-register{
+.loginFormBtn .pure-button-register{
 	width: 48%;
 	background-color: #a09e9e;
 	color: #fff;
 }
-.pure-button-login{
+.loginFormBtn .pure-button-login{
 	width: 48%;
 	background-color: #f56c23;
 }
 
 @media(max-width: 480px){
 	.loginFormBtn .pure-button-login[type="submit"]{
+		margin: 0;
+	}
+}
+
+
+/* REGISTER.HTML special CSS setting */
+
+.registerForm{
+	width: 90%;
+	margin: 40px 5%;
+}
+
+.registerForm li{
+	width: 50%;
+	/*margin: 40px 5%;*/
+	float: left;
+}
+
+.registerRule p{
+	width: 90%;
+	margin: 10px 5%;
+	font-size: 12px;
+}
+
+.registerFormBtn{
+	margin: 20px 2%;
+}
+
+.registerFormBtn .pure-button-register{
+	width: 48%;
+	background-color: #f56c23;
+	float: right;
+}
+
+@media(max-width: 480px){
+	.registerFormBtn .pure-button-login[type="submit"]{
 		margin: 0;
 	}
 }
