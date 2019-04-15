@@ -1,0 +1,1002 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset for RWD */
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* CSS reset END */
+
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+
+body{
+	font-family: 微軟正黑體;
+	/*background-color: #000;*/
+}
+
+/* 統一字型大小 h2~h6,p {font-size} */
+h2{	font-size: 30px; }
+h3{	font-size: 24px; }
+h4{ font-size: 20px; }
+h5{	font-size: 18px; }
+h6{	font-size: 16px; }
+p{	font-size: 14px;
+	line-height: 1.5;
+	text-align: justify;
+	text-indent: 2em; }
+
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 998;
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+}
+
+.logo h1 a{
+	/* for SearchEngine */
+	background-image: url("../img/logo_w(null).svg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 120px;
+	height: 40px;
+	margin: 10px 20px;
+	display: block;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+}
+
+.navbar{
+	position: relative;
+	transition: all 2s;
+}
+
+.navbar ul{
+	float: right;
+}
+
+.navbar li{
+	float: left;
+}
+
+.navbar li a{
+	display: block;
+	padding: 20px;
+	/*margin-right: 20px;*/
+	text-decoration: none;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.navbar li a:hover,.navbar li a:focus{
+	background-color: orange;
+}
+
+.mainMenu{
+	position: relative;
+}
+.subMenu{
+	background-color: #000;
+	display: none;
+	position: absolute;
+	top: 62px;
+}
+
+
+
+
+
+
+.showmenu{
+	display: none;
+}
+
+
+
+@media(max-width: 414px){
+	.showmenu{
+		display: block;
+		float: right;
+	}
+	.navbar{
+		max-height: 0;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 63px;
+		background-color: #000;
+	}
+	.navbar ul{
+		float: none;
+	}
+
+	.navbar li{
+		float: none;
+	}
+	.navbar li a{
+		margin: 0 0;
+		margin-right: 0;
+		
+		padding-left: 20px;
+		margin-left: 20px;
+		
+		/*border-top: 1px dashed #fff;*/
+		border-bottom: 1px dashed #fff;
+		border-left: 5px solid orange;
+	}
+
+	.mobile .navbar{
+		max-height: 500px;
+	}
+
+	.mobile .mainMenu{
+		/*display: none;*/
+	}
+
+	.mobile .subMenu{
+		display: none;
+		position: relative;
+		top: 0;
+		margin-left: 60px;
+		padding: 10px;
+
+	}
+
+	.mobile .subMenu li a{
+		
+		border-left: 5px solid blue;
+	}
+
+	.mobile .subMenu li a:hover{
+		background-color: blue;
+	}
+
+}
+
+.banner{
+	margin-top: 60px;
+	background-color: #000;
+	position: relative;
+	z-index: 1;
+}
+
+.bannerMask{
+	background-color: rgba(0,0,0,0.3);
+	padding: 20px;
+	color: #fff;
+	position: absolute;
+	z-index: 997;
+	bottom: 20%;
+	width: 96%;
+	margin: 0 2%;
+	text-align: center;
+}
+
+.bannerMask h2{
+	margin-bottom: 10px;
+}
+
+.bannerMask h5{
+	line-height: 1.5;
+}
+
+.bannerMask .symbol{
+	margin: 0 5px;
+}
+
+.bannerMobile{
+	display: none;
+	margin-top: 60px;
+	background-color: #000;
+	position: relative;
+	z-index: 1;
+}
+
+@media(max-width: 414px){
+	.banner{
+		display: none;
+	}
+	.bannerMobile{
+		display: block;
+	}
+}
+
+.featureDesc{
+	margin: 0 auto;
+	background-color: #efe9e7;
+}
+
+.featureDesc h5{
+	text-align: center;
+}
+
+.featureDesc li{
+	float: left;
+	width: 31.33333%;
+	margin: 1%;
+	text-align: center;
+}
+
+.featureDesc img{
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
+
+.featureDesc li h4{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.featureDesc li p{
+	text-align: justify;
+	padding: 5%;
+}
+
+@media(max-width: 414px){
+	.featureDesc li{
+		width: 98%;
+	}
+}
+
+.featureTableSet{
+	width: 80%;
+	margin: 0 10%;
+}
+
+/*.featureTableSet td{
+	width: 33.33333%;
+	padding: 20px 0;
+	vertical-align: middle;
+	text-align: center;
+}*/
+
+.featureTableSet hr{
+	width: 50%;
+}
+
+.featureTableSet li{
+	float: left;
+	width: 31.33333%;
+	margin: 30px 1%;
+	text-align: center;
+}
+
+.featureTableHR{
+	width: 20%;
+}
+
+@media(max-width: 414px){
+	.featureTableSet li{
+		width: 98%;
+	}
+	.featureTableHR{
+		display: none;
+	}
+}
+
+.chefInfo{
+	margin: 0 auto;
+	background-color: #3d1101;
+	color: #efe9e7;
+}
+
+
+.chefInfo li{
+	float: left;
+	width: 46%;
+	margin: 2%;
+	padding: 2%;
+
+	text-align: center;
+
+}
+.chefInfo p{
+	padding: 10px;
+	text-align: justify;
+}
+
+.chefInfo h4{
+	text-align: left;
+}
+
+.chefInfo span{
+	font-size: 16px;
+}
+
+@media(max-width: 414px){
+	.chefInfo li{
+		width: 96%;
+	}
+}
+
+.feedbackMsg{
+	padding: 20px 0;
+	color: #3d1101;
+	background-color: #efe9e7;
+}
+.feedbackMsg h5{
+	text-align: center;
+}
+
+.feedbackMsgBlock img{
+	border-radius: 50%;
+	border: 2px solid 	#fff;
+}
+
+.feedbackMsgBlock p{
+	text-indent: 0;
+	margin-top: 10px;
+	padding-left: 5.5em;
+}
+
+.feedbackTitle{
+	font-size: 16px;
+	padding-left: 0.5em;
+}
+
+.feedbackSign{
+	display: block;
+	text-align: right;
+}
+
+.swiper-container {
+ 	width: 96%;
+	height: 96%;
+	margin: 2% 2%;
+}
+.swiper-slide {
+	text-align: center;
+	/*font-size: 18px;*/
+	/*background: #fff;*/
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+.orderForm{
+	margin-top: 20px;
+	color: #3d1101;
+}
+
+.mapwrapper{
+	position: relative;
+    padding-bottom: 70%; 
+    overflow: hidden;
+}
+
+.mapwrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.orderForm h5{
+	text-align: center;
+}
+
+.orderForm li{
+	width: 48%;
+
+	margin: 20px 1%;
+	float: left;
+}
+
+@media(max-width: 414px){
+	.orderForm li{
+		width: 98%;
+	}
+}
+
+.orderForm .inputSetting{
+	width: 98%;
+	margin: 1% 1%;
+	font-size: 14px;
+	font-family: 微軟正黑體;
+}
+
+.orderForm iframe{
+	width: 350px;
+	height: 250px;
+	margin-top: 20px;
+}
+
+.orderformBtn{
+	float: right;
+}
+
+.radioItem input[type='radio']:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.radioItem input[type='radio']:checked:after {
+    border-radius: 11px;
+    background-color: #4a90e2;
+    border: 5px solid #fff;
+}
+
+.radioItem label{
+	margin-left: 5px;
+}
+
+.pure-button-cancel{
+	background-color: #a09e9e;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pure-button-submit{
+	background-color: #f56c23;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.footer{
+	padding: 30px 0;
+	color: #3d1101;
+	background-color: #efe9e7;
+}
+
+.restInfo{
+	float: left;
+	width: 29.33333%;
+	margin: 20px 3%;
+}
+
+.restInfo h4{
+	margin-bottom: 10px;
+}
+
+.restInfo li{
+	list-style: disc;
+	list-style-position: inside;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.restInfologo{
+	float: right;
+	background-image: url("../img/logo_l(null).svg");
+	background-repeat: no-repeat;
+	width: 243px;
+	height: 48px;
+	margin: 20px;
+}
+
+.restInfologo ul{
+	float: right;
+}
+
+.restInfologo ul li{
+	float: left;
+}
+
+.restInfologo img{
+	width: 24px;
+	height: auto;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+@media(max-width: 414px){
+	.restInfo{
+		width: 94%;
+	}
+}
+
+.backtotopBtn{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	z-index: 999;
+}
+
+.backtotopBtn i{
+	font-size: 44px;
+	color: #ff5e45;
+	background-color: #efe9e7;
+}
+
+.backtotopBtn i:hover{
+	color: red;
+}
+
+/* CART.HTML CSS setting */
+
+.cartMain{
+	background-color: #efe9e7;
+
+}
+
+.foodMenu{
+	float: left;
+	width: 21%;
+	margin: 30px 2%;
+
+}
+
+.foodMenu span{
+	color: #3d1101;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+.foodMenu i{
+	font-size: 20px;
+	color: #3d1101;
+}
+
+@media(max-width: 414px){
+	.foodMenu{
+		float: none;
+		width: 96%;
+		padding: 30px;
+	}
+}
+
+.foodList{
+	margin-top: 20px;
+}
+
+.foodList li{
+	
+	border-bottom: 1px solid #3d1101;
+}
+
+.foodList li a{
+	display: block;
+	padding: 10px;
+	color: #3d1101;
+	text-decoration: none;
+}
+
+.foodList li a:hover{
+	background-color: #3d1101;
+	color: #fff;
+}
+
+.content{
+	float: left;
+	width: 71%;
+	margin: 20px 2%;
+}
+
+@media(max-width: 414px){
+	.content{
+		float: none;
+		width: 96%;
+	}
+}
+
+.searchInput{
+	float: left;
+	margin-top: 10px;
+}
+.searchInput .pure-form input{
+	float: left;
+	width: 250px;
+	font-size: 16px;
+	font-family: 微軟正黑體;
+	border: 1px solid #3d1101;
+}
+.searchInput .pure-button-submit{
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	background-color: #3d1101;
+}
+
+@media(max-width: 480px){
+	.searchInput .pure-button-submit[type="submit"]{
+		margin: 0;
+	}
+}
+
+@media(max-width: 414px){
+	.searchInput{
+		float: none;
+		width: 96%;
+		margin: 0 2%;
+	}
+	.searchInput .pure-form input{
+		float: left;
+		width: 80%;
+	}
+}
+
+.paycartSection ul{
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.paycartSection li{
+	float: left;
+	
+	margin-bottom: 5px;
+}
+
+.gopayText{
+	padding-right: 10px;
+	border-right: 1px solid #3d1101;
+}
+
+.gopayText a{
+	display: block;
+	color: #3d1101;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.gopayImg{
+	position: relative;
+	margin-left: 10px;
+}
+
+.gopayImg i{
+	font-size: 24px;
+	color: #3d1101;
+}
+
+.orderQuantity{
+	font-family: Arial;
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	background-color: #ff5e45;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 12px;
+	padding: 2px;
+}
+
+.cuisineShow{
+	margin: 20px auto;
+	text-align: center;
+}
+
+.cuisineShow li{
+	width: 31.33333%;
+	/*height: 350px;*/
+	margin: 20px 1%;
+	padding-bottom: 10px;
+	float: left;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px gray;
+}
+
+@media(max-width: 414px){
+	.cuisineShow li{
+		float: none;
+		width: 98%;
+	}
+}
+
+.cuisineShow img{
+	height: 120px;
+	width: auto;
+}
+
+.cuisineShow h4{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.cuisineName{
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.cuisineShow hr{
+	width: 50%;
+	margin-bottom: 40px;
+}
+
+.cuisinePrice{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cuisineHeart{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+	padding: 5px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.cuisineHeart:hover{
+	color: red;
+}
+
+.cuisineHeart .fas{
+	color: red;
+}
+
+.cuisineMark{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	background-color: #00cc99;
+	color: #fff;
+	font-weight: bold;
+}
+
+.addcartBtn a{
+	display: block;
+	background-color: rgba(255,255,255,0);
+	padding: 10px;
+	margin: 10px;
+	
+	color: #ff5e45;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	
+	border-radius: 5px;
+	border: 2px solid #ff5e45;
+}
+
+.addcartBtn a:hover{
+	background-color: #ff5e45;
+	color: #fff;
+}
+
+.addcartBtn .fa-shopping-cart{
+	margin-right: 5px;
+}
+
+
+/*	LOGIN.HTML & REGISTER.HTML 
+	common CSS setting */
+
+.formMain{
+	margin: 40px auto;
+}
+.formMain h4{
+	text-align: center;
+	font-weight: bold;
+	color: #3d1101;
+
+}
+
+.formMainlogo{
+	background-image: url("../img/logo_l(null).svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 80%;
+	height: 48px;
+	margin: 10px 10%;
+}
+
+.formInput{
+	position: relative;
+	padding-left: 1em;
+}
+
+.formIcon{
+	font-size: 16px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 5px auto;
+}
+
+
+.formSpecMsg{
+	color: #ff5e45;
+	font-size: 14px;
+}
+
+/* LOGIN.HTML Special CSS setting */
+
+.loginForm,.registerForm{
+	width: 50%;
+	margin: 40px 25%;
+	padding: 10px;
+	box-shadow: 1px 1px 5px gray;
+	border-top: 5px solid #ff5e45;
+}
+
+.loginForm h5,.registerForm h5{
+	color: #3d1101;
+	font-weight: bold;
+	font-family: Arial Black;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.loginForm label,.registerForm label{
+	color: #3d1101;
+}
+
+.loginFormBtn{
+	margin: 20px 2%;
+}
+
+.loginFormBtn .pure-button-register{
+	width: 48%;
+	background-color: #a09e9e;
+	color: #fff;
+}
+.loginFormBtn .pure-button-login{
+	width: 48%;
+	background-color: #f56c23;
+}
+
+@media(max-width: 480px){
+	.loginFormBtn .pure-button-login[type="submit"]{
+		margin: 0;
+	}
+}
+
+@media(max-width: 414px){
+	.loginForm{
+		width: 90%;
+		margin: 40px 5%;
+	}
+}
+
+
+/* REGISTER.HTML special CSS setting */
+
+.registerForm{
+	width: 90%;
+	margin: 40px 5%;
+}
+
+.registerForm li{
+	width: 50%;
+	/*margin: 40px 5%;*/
+	float: left;
+}
+.registerRuleMobile{
+	display: none;
+}
+
+.registerRule h6,.registerRuleMobile h6{
+	margin-bottom: 10px;
+}
+.registerRule p,.registerRuleMobile p{
+	width: 90%;
+	margin: 10px 5%;
+	font-size: 12px;
+}
+
+.registerFormBtn{
+	margin: 20px 2%;
+}
+
+.registerFormBtn .pure-button-register{
+	width: 48%;
+	background-color: #f56c23;
+	float: right;
+}
+
+@media(max-width: 480px){
+	.registerFormBtn .pure-button-login[type="submit"]{
+		margin: 0;
+	}
+}
+
+@media(max-width: 414px){
+	.registerForm li{
+		width: 98%;
+		/*margin: 40px 5%;*/
+		float: none;
+	}
+	.registerRule{
+		display: none;
+	}
+	.registerRuleMobile{
+		display: block;
+	}
+	.registerRuleMobile p{
+		display: none;
+	}
+
+	.registerRuleMobile a{
+		display: block;
+		padding: 10px 0;
+		background-color: #fff;
+		color: blue;
+		
+	}
+	.registerRuleMobile a:hover{
+		background-color: yellow;
+	}
+}

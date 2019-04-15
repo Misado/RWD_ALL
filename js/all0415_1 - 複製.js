@@ -34,9 +34,7 @@ $(document).ready(function() {
 
 	$(".mainMenu > a").click(function(event) {
 		event.preventDefault();
-		/*$(".subMenu").slideToggle();*/
-		$(this).parent().find("ul").slideToggle();
-		$(this).parent().siblings().find("ul").slideUp();
+		$(".subMenu").slideToggle();
 	});
 
 	$(".showmenu").click(function(event) {
