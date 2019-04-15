@@ -946,8 +946,8 @@ p{	font-size: 14px;
 		display: block;
 		padding: 10px 0;
 		background-color: #fff;
-		color: red;
-		text-decoration: none;
+		color: blue;
+		
 	}
 	.registerRuleMobile a:hover{
 		background-color: yellow;
