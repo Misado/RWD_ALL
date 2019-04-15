@@ -136,6 +136,7 @@ p{	font-size: 14px;
 	background-color: orange;
 }
 
+
 .mainMenu{
 	position: relative;
 }
@@ -210,7 +211,7 @@ p{	font-size: 14px;
 		border-left: 5px solid blue;
 	}
 
-	.mobile .subMenu li a:hover,.mobile .subMenu li a:focus{
+	.mobile .subMenu li a:hover{
 		background-color: blue;
 	}
 
@@ -578,10 +579,10 @@ p{	font-size: 14px;
 .backtotopBtn i{
 	font-size: 44px;
 	color: #ff5e45;
-	/*background-color: #efe9e7;*/
+	background-color: #efe9e7;
 }
 
-.backtotopBtn i:hover,.backtotopBtn i:focus{
+.backtotopBtn i:hover{
 	color: red;
 }
 
@@ -634,7 +635,7 @@ p{	font-size: 14px;
 	text-decoration: none;
 }
 
-.foodList li a:hover,.foodList li a:focus{
+.foodList li a:hover{
 	background-color: #3d1101;
 	color: #fff;
 }
@@ -751,12 +752,6 @@ p{	font-size: 14px;
 	box-shadow: 1px 1px 5px gray;
 }
 
-@media(max-width: 768px){
-	.cuisineShow li{
-		width: 48%;
-	}
-}
-
 @media(max-width: 414px){
 	.cuisineShow li{
 		float: none;
@@ -772,7 +767,6 @@ p{	font-size: 14px;
 .cuisineShow h4{
 	margin-top: 10px;
 	margin-bottom: 5px;
-	white-space: nowrap;
 }
 
 .cuisineName{
@@ -801,7 +795,7 @@ p{	font-size: 14px;
 	font-size: 20px;
 }
 
-.cuisineHeart:hover,.cuisineHeart:focus{
+.cuisineHeart:hover{
 	color: red;
 }
 
@@ -835,7 +829,7 @@ p{	font-size: 14px;
 	border: 2px solid #ff5e45;
 }
 
-.addcartBtn a:hover,.addcartBtn a:focus{
+.addcartBtn a:hover{
 	background-color: #ff5e45;
 	color: #fff;
 }
@@ -1001,7 +995,7 @@ p{	font-size: 14px;
 		color: blue;
 		
 	}
-	.registerRuleMobile a:hover,.registerRuleMobile a:focus{
+	.registerRuleMobile a:hover{
 		background-color: yellow;
 	}
 }

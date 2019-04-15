@@ -4,9 +4,9 @@ $(document).ready(function() {
 		slidesPerView: 3,
 		spaceBetween: 5,
 		loop: true,
-		autoplay: {
+		/*autoplay: {
 			delay: 5000,
-		},
+		},*/
 		breakpoints: {
 	    // when window width is <= 320px
 	    413: {
