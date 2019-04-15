@@ -49,4 +49,9 @@ $(document).ready(function() {
 	$(".cuisineHeart").click(function(event) {
 		$(this).find("i").toggleClass('far fa-heart').toggleClass('fas fa-heart');
 	});
+
+	$(".registerRuleMobile a").click(function(event) {
+		event.preventDefault();
+		$(".registerRuleMobile p").slideToggle();
+	});
 });

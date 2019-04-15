@@ -897,8 +897,14 @@ p{	font-size: 14px;
 	/*margin: 40px 5%;*/
 	float: left;
 }
+.registerRuleMobile{
+	display: none;
+}
 
-.registerRule p{
+.registerRule h6,.registerRuleMobile h6{
+	margin-bottom: 10px;
+}
+.registerRule p,.registerRuleMobile p{
 	width: 90%;
 	margin: 10px 5%;
 	font-size: 12px;
@@ -925,5 +931,25 @@ p{	font-size: 14px;
 		width: 98%;
 		/*margin: 40px 5%;*/
 		float: none;
+	}
+	.registerRule{
+		display: none;
+	}
+	.registerRuleMobile{
+		display: block;
+	}
+	.registerRuleMobile p{
+		display: none;
+	}
+
+	.registerRuleMobile a{
+		display: block;
+		padding: 10px 0;
+		background-color: #fff;
+		color: red;
+		text-decoration: none;
+	}
+	.registerRuleMobile a:hover{
+		background-color: yellow;
 	}
 }
