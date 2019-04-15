@@ -137,7 +137,15 @@ p{	font-size: 14px;
 }
 
 
-
+.mainMenu{
+	position: relative;
+}
+.subMenu{
+	background-color: #000;
+	display: none;
+	position: absolute;
+	top: 61px;
+}
 
 
 .showmenu{
@@ -181,7 +189,31 @@ p{	font-size: 14px;
 		max-height: 500px;
 	}
 
+	.mobile .navbar{
+		max-height: 500px;
+	}
 
+	.mobile .mainMenu{
+		/*display: none;*/
+	}
+
+	.mobile .subMenu{
+		display: none;
+		position: relative;
+		top: 0;
+		margin-left: 60px;
+		padding: 10px;
+
+	}
+
+	.mobile .subMenu li a{
+		
+		border-left: 5px solid blue;
+	}
+
+	.mobile .subMenu li a:hover{
+		background-color: blue;
+	}
 
 }
 

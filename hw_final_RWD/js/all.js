@@ -32,6 +32,13 @@ $(document).ready(function() {
 		speed: 3000,
 	});
 
+	$(".mainMenu > a").click(function(event) {
+		event.preventDefault();
+		/*$(".subMenu").slideToggle();*/
+		$(this).parent().find("ul").slideToggle();
+		$(this).parent().siblings().find("ul").slideUp();
+	});
+
 	$(".showmenu").click(function(event) {
 		event.preventDefault();
 		/* Act on the event */
