@@ -32,9 +32,9 @@ $(document).ready(function() {
 		speed: 3000,
 	});
 
-	$(".navbarMainmenu").click(function(event) {
+	$(".mainMenu > a").click(function(event) {
 		event.preventDefault();
-		$(".navbarSubmenu").slideToggle();
+		$(".subMenu").slideToggle();
 	});
 
 	$(".showmenu").click(function(event) {

@@ -136,21 +136,26 @@ p{	font-size: 14px;
 	background-color: orange;
 }
 
-.navbarMainmenu{
+.mainMenu{
 	position: relative;
 }
-.navbarSubmenu a{
-	/*display: none;*/
+.subMenu{
+	background-color: #000;
+	display: none;
 	position: absolute;
-	top: 58px;
-	background-color: rgba(0,0,0,0.7);
+	top: 62px;
 }
+
+
+
 
 
 
 .showmenu{
 	display: none;
 }
+
+
 
 @media(max-width: 414px){
 	.showmenu{
@@ -189,13 +194,26 @@ p{	font-size: 14px;
 		max-height: 500px;
 	}
 
-	.mobile .navbarSubmenu{
-		display: block;
-		color: #000;
-		z-index: 999;
-		position: absolute;
-		top: 58px;
-		background-color: rgba(0,0,0,0.7);
+	.mobile .mainMenu{
+		/*display: none;*/
+	}
+
+	.mobile .subMenu{
+		display: none;
+		position: relative;
+		top: 0;
+		margin-left: 60px;
+		padding: 10px;
+
+	}
+
+	.mobile .subMenu li a{
+		
+		border-left: 5px solid blue;
+	}
+
+	.mobile .subMenu li a:hover{
+		background-color: blue;
 	}
 
 }
@@ -903,6 +921,13 @@ p{	font-size: 14px;
 @media(max-width: 480px){
 	.loginFormBtn .pure-button-login[type="submit"]{
 		margin: 0;
+	}
+}
+
+@media(max-width: 414px){
+	.loginForm{
+		width: 90%;
+		margin: 40px 5%;
 	}
 }
 
