@@ -136,7 +136,15 @@ p{	font-size: 14px;
 	background-color: orange;
 }
 
-
+.navbarMainmenu{
+	position: relative;
+}
+.navbarSubmenu a{
+	/*display: none;*/
+	position: absolute;
+	top: 58px;
+	background-color: rgba(0,0,0,0.7);
+}
 
 
 
@@ -181,7 +189,14 @@ p{	font-size: 14px;
 		max-height: 500px;
 	}
 
-
+	.mobile .navbarSubmenu{
+		display: block;
+		color: #000;
+		z-index: 999;
+		position: absolute;
+		top: 58px;
+		background-color: rgba(0,0,0,0.7);
+	}
 
 }
 
@@ -888,13 +903,6 @@ p{	font-size: 14px;
 @media(max-width: 480px){
 	.loginFormBtn .pure-button-login[type="submit"]{
 		margin: 0;
-	}
-}
-
-@media(max-width: 414px){
-	.loginForm{
-		width: 90%;
-		margin: 40px 5%;
 	}
 }
 
