@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* -- CSS reset -- */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +48,7 @@ table {
 	border-spacing: 0;
 }
 
-/* CSS reset for RWD */
+/* -- CSS reset for RWD -- */
 *,*:before,*:after{
 	box-sizing: border-box;
 }
@@ -56,7 +57,20 @@ img{
 	height: auto;
 }
 
-/* CSS reset END */
+/* -- CSS reset END -- */
+
+
+/* Index */
+/* -- 0. Overall CSS setting -- */
+/* -- 1. INDEX.HTML CSS setting -- */
+/* -- 2. ORDER.HTML CSS setting */
+/* -- 3.LOGIN.HTML & REGISTER.HTML 
+	  common CSS setting -- */
+/* -- 4.LOGIN.HTML Special CSS setting -- */
+/* -- 5.REGISTER.HTML Special CSS setting -- */
+
+
+/* -- 0. Overall CSS setting -- */
 
 .clearfix:after{
   content:'';
@@ -126,7 +140,6 @@ p{	font-size: 14px;
 .navbar li a{
 	display: block;
 	padding: 20px;
-	/*margin-right: 20px;*/
 	text-decoration: none;
 	color: #fff;
 	transition: all 0.3s;
@@ -139,6 +152,7 @@ p{	font-size: 14px;
 .mainMenu{
 	position: relative;
 }
+
 .subMenu{
 	background-color: #000;
 	display: none;
@@ -146,16 +160,17 @@ p{	font-size: 14px;
 	top: 61px;
 }
 
-
 .showmenu{
 	display: none;
 }
 
+/* navbar RWD CSS setting */
 @media(max-width: 414px){
 	.showmenu{
 		display: block;
 		float: right;
 	}
+
 	.navbar{
 		max-height: 0;
 		overflow: hidden;
@@ -168,7 +183,6 @@ p{	font-size: 14px;
 	.navbar ul{
 		float: none;
 	}
-
 	.navbar li{
 		float: none;
 	}
@@ -178,8 +192,6 @@ p{	font-size: 14px;
 		
 		padding-left: 20px;
 		margin-left: 20px;
-		
-		/*border-top: 1px dashed #fff;*/
 		border-bottom: 1px dashed #fff;
 		border-left: 5px solid orange;
 	}
@@ -188,28 +200,16 @@ p{	font-size: 14px;
 		max-height: 500px;
 	}
 
-	.mobile .navbar{
-		max-height: 500px;
-	}
-
-	.mobile .mainMenu{
-		/*display: none;*/
-	}
-
 	.mobile .subMenu{
 		display: none;
-		position: relative;
-		top: 0;
 		margin-left: 60px;
 		padding: 10px;
-
+		position: relative;
+		top: 0;
 	}
-
 	.mobile .subMenu li a{
-		
 		border-left: 5px solid blue;
 	}
-
 	.mobile .subMenu li a:hover,.mobile .subMenu li a:focus{
 		background-color: blue;
 	}
@@ -255,6 +255,7 @@ p{	font-size: 14px;
 	z-index: 1;
 }
 
+/* banner RWD CSS setting */
 @media(max-width: 414px){
 	.banner{
 		display: none;
@@ -264,27 +265,95 @@ p{	font-size: 14px;
 	}
 }
 
+/* bottom of page setting */
+.footer{
+	padding: 30px 0;
+	color: #3d1101;
+	background-color: #efe9e7;
+}
+/* restaurant information */
+.restInfo{
+	float: left;
+	width: 29.33333%;
+	margin: 20px 3%;
+}
+.restInfo h4{
+	margin-bottom: 10px;
+}
+.restInfo li{
+	list-style: disc;
+	list-style-position: inside;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.restInfologo{
+	float: right;
+	background-image: url("../img/logo_l(null).svg");
+	background-repeat: no-repeat;
+	width: 243px;
+	height: 48px;
+	margin: 20px;
+}
+.restInfologo ul{
+	float: right;
+}
+.restInfologo ul li{
+	float: left;
+}
+.restInfologo img{
+	width: 24px;
+	height: auto;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+/* restaurant information RWD setting*/
+@media(max-width: 414px){
+	.restInfo{
+		width: 94%;
+	}
+}
+
+/* back to the top of page*/
+.backtotopBtn{
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	z-index: 999;
+}
+.backtotopBtn i{
+	font-size: 48px;
+	color: #ff5e45;
+	/*background-color: #efe9e7;*/
+}
+.backtotopBtn i:hover,.backtotopBtn i:focus{
+	color: red;
+}
+
+/* -- 0. Overall CSS setting END -- */
+
+
+/* -- 1. INDEX.HTML CSS setting -- */
+
+
 .featureDesc{
 	margin: 0 auto;
 	background-color: #efe9e7;
 }
-
 .featureDesc h5{
 	text-align: center;
 }
-
+.featureDesc img{
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
 .featureDesc li{
 	float: left;
 	width: 31.33333%;
 	margin: 1%;
 	text-align: center;
 }
-
-.featureDesc img{
-	border-radius: 50%;
-	border: 5px solid #fff;
-}
-
 .featureDesc li h4{
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -294,48 +363,38 @@ p{	font-size: 14px;
 	padding: 5%;
 }
 
-@media(max-width: 414px){
-	.featureDesc li{
-		width: 98%;
-	}
-}
-
-.featureTableSet{
+.featureBlock{
 	width: 80%;
 	margin: 0 10%;
 }
-
-/*.featureTableSet td{
-	width: 33.33333%;
-	padding: 20px 0;
-	vertical-align: middle;
-	text-align: center;
-}*/
-
-.featureTableSet hr{
+.featureBlock hr{
 	width: 50%;
 }
-
-.featureTableSet li{
+.featureBlock li{
 	float: left;
 	width: 31.33333%;
 	margin: 30px 1%;
 	text-align: center;
 }
 
-.featureTableHR{
+.featureBlockHR{
 	width: 20%;
 }
 
+/* feature RWD setting */
 @media(max-width: 414px){
-	.featureTableSet li{
+	.featureDesc li{
 		width: 98%;
 	}
-	.featureTableHR{
+	.featureBlock li{
+		width: 98%;
+	}
+	.featureBlockHR{
 		display: none;
 	}
 }
 
+/* chef information */
 .chefInfo{
 	margin: 0 auto;
 	background-color: #3d1101;
@@ -365,12 +424,14 @@ p{	font-size: 14px;
 	font-size: 16px;
 }
 
+/* chef information RWD setting */
 @media(max-width: 414px){
 	.chefInfo li{
 		width: 96%;
 	}
 }
 
+/* customer's feed back */
 .feedbackMsg{
 	padding: 20px 0;
 	color: #3d1101;
@@ -384,7 +445,6 @@ p{	font-size: 14px;
 	border-radius: 50%;
 	border: 2px solid 	#fff;
 }
-
 .feedbackMsgBlock p{
 	text-indent: 0;
 	margin-top: 10px;
@@ -399,8 +459,10 @@ p{	font-size: 14px;
 .feedbackSign{
 	display: block;
 	text-align: right;
+	font-size: 12px;
 }
 
+/* feedback swiper's setting */
 .swiper-container {
  	width: 96%;
 	height: 96%;
@@ -408,8 +470,6 @@ p{	font-size: 14px;
 }
 .swiper-slide {
 	text-align: center;
-	/*font-size: 18px;*/
-	/*background: #fff;*/
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -425,7 +485,7 @@ p{	font-size: 14px;
 	align-items: center;
 }
 
-
+/* order form & map */
 .orderForm{
 	margin-top: 20px;
 	color: #3d1101;
@@ -436,7 +496,6 @@ p{	font-size: 14px;
     padding-bottom: 70%; 
     overflow: hidden;
 }
-
 .mapwrapper iframe{
     position: absolute;
     top: 0;
@@ -448,7 +507,6 @@ p{	font-size: 14px;
 .orderForm h5{
 	text-align: center;
 }
-
 .orderForm li{
 	width: 48%;
 
@@ -456,6 +514,7 @@ p{	font-size: 14px;
 	float: left;
 }
 
+/* order form RWD setting */
 @media(max-width: 414px){
 	.orderForm li{
 		width: 98%;
@@ -469,17 +528,12 @@ p{	font-size: 14px;
 	font-family: 微軟正黑體;
 }
 
-.orderForm iframe{
-	width: 350px;
-	height: 250px;
-	margin-top: 20px;
-}
-
 .orderformBtn{
 	float: right;
 }
 
-.radioItem input[type='radio']:after {
+/* order form vegetable radio setting */
+.orderForm .radioItem input[type='radio']:after {
     width: 17px;
     height: 17px;
     border-radius: 17px;
@@ -492,124 +546,54 @@ p{	font-size: 14px;
     visibility: visible;
     border: 2px solid white;
 }
-
-.radioItem input[type='radio']:checked:after {
+.orderForm .radioItem input[type='radio']:checked:after {
     border-radius: 11px;
     background-color: #4a90e2;
     border: 5px solid #fff;
 }
-
-.radioItem label{
+.orderForm .radioItem label{
 	margin-left: 5px;
 }
 
-.pure-button-cancel{
+/* order form pure button customized setting */
+.orderForm .pure-button-cancel{
 	background-color: #a09e9e;
 	color: #fff;
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.pure-button-submit{
+.orderForm .pure-button-submit{
 	background-color: #f56c23;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
-.footer{
-	padding: 30px 0;
-	color: #3d1101;
-	background-color: #efe9e7;
-}
 
-.restInfo{
-	float: left;
-	width: 29.33333%;
-	margin: 20px 3%;
-}
+/* -- 1. INDEX.HTML CSS setting  END-- */
 
-.restInfo h4{
-	margin-bottom: 10px;
-}
 
-.restInfo li{
-	list-style: disc;
-	list-style-position: inside;
-	font-size: 14px;
-	line-height: 1.5;
-}
-
-.restInfologo{
-	float: right;
-	background-image: url("../img/logo_l(null).svg");
-	background-repeat: no-repeat;
-	width: 243px;
-	height: 48px;
-	margin: 20px;
-}
-
-.restInfologo ul{
-	float: right;
-}
-
-.restInfologo ul li{
-	float: left;
-}
-
-.restInfologo img{
-	width: 24px;
-	height: auto;
-	margin-top: 60px;
-	margin-left: 10px;
-}
-
-@media(max-width: 414px){
-	.restInfo{
-		width: 94%;
-	}
-}
-
-.backtotopBtn{
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	z-index: 999;
-}
-
-.backtotopBtn i{
-	font-size: 44px;
-	color: #ff5e45;
-	/*background-color: #efe9e7;*/
-}
-
-.backtotopBtn i:hover,.backtotopBtn i:focus{
-	color: red;
-}
-
-/* CART.HTML CSS setting */
+/* -- 2. ORDER.HTML CSS setting */
 
 .cartMain{
 	background-color: #efe9e7;
-
 }
-
+/* left food menu */
 .foodMenu{
 	float: left;
 	width: 21%;
 	margin: 30px 2%;
-
 }
-
 .foodMenu span{
 	color: #3d1101;
 	font-size: 20px;
 	margin-left: 10px;
 }
-
 .foodMenu i{
 	font-size: 20px;
 	color: #3d1101;
 }
 
+/* left food menu RWD setting */
 @media(max-width: 414px){
 	.foodMenu{
 		float: none;
@@ -618,33 +602,32 @@ p{	font-size: 14px;
 	}
 }
 
+/* left food menu list*/
 .foodList{
 	margin-top: 20px;
 }
-
 .foodList li{
-	
 	border-bottom: 1px solid #3d1101;
 }
-
 .foodList li a{
 	display: block;
 	padding: 10px;
 	color: #3d1101;
 	text-decoration: none;
 }
-
 .foodList li a:hover,.foodList li a:focus{
 	background-color: #3d1101;
 	color: #fff;
 }
 
+/* right food content */
 .content{
 	float: left;
 	width: 71%;
 	margin: 20px 2%;
 }
 
+/* right food content RWD settomg */
 @media(max-width: 414px){
 	.content{
 		float: none;
@@ -670,12 +653,14 @@ p{	font-size: 14px;
 	background-color: #3d1101;
 }
 
+/* searchInput 改掉原本pure.css有的設定 */
 @media(max-width: 480px){
 	.searchInput .pure-button-submit[type="submit"]{
 		margin: 0;
 	}
 }
 
+/* searchInput RWD setting */
 @media(max-width: 414px){
 	.searchInput{
 		float: none;
@@ -688,15 +673,14 @@ p{	font-size: 14px;
 	}
 }
 
+/* shopping cart section */
 .paycartSection ul{
 	float: right;
 	margin-top: 10px;
 	margin-right: 10px;
 }
-
 .paycartSection li{
 	float: left;
-	
 	margin-bottom: 5px;
 }
 
@@ -704,7 +688,6 @@ p{	font-size: 14px;
 	padding-right: 10px;
 	border-right: 1px solid #3d1101;
 }
-
 .gopayText a{
 	display: block;
 	color: #3d1101;
@@ -717,7 +700,6 @@ p{	font-size: 14px;
 	position: relative;
 	margin-left: 10px;
 }
-
 .gopayImg i{
 	font-size: 24px;
 	color: #3d1101;
@@ -735,11 +717,11 @@ p{	font-size: 14px;
 	padding: 2px;
 }
 
+/* cuisine block setting */
 .cuisineShow{
 	margin: 20px auto;
 	text-align: center;
 }
-
 .cuisineShow li{
 	width: 31.33333%;
 	/*height: 350px;*/
@@ -751,12 +733,12 @@ p{	font-size: 14px;
 	box-shadow: 1px 1px 5px gray;
 }
 
+/* cuisine block RWD setting */
 @media(max-width: 768px){
 	.cuisineShow li{
 		width: 48%;
 	}
 }
-
 @media(max-width: 414px){
 	.cuisineShow li{
 		float: none;
@@ -768,7 +750,6 @@ p{	font-size: 14px;
 	height: 120px;
 	width: auto;
 }
-
 .cuisineShow h4{
 	margin-top: 10px;
 	margin-bottom: 5px;
@@ -800,15 +781,14 @@ p{	font-size: 14px;
 	cursor: pointer;
 	font-size: 20px;
 }
-
 .cuisineHeart:hover,.cuisineHeart:focus{
 	color: red;
 }
-
 .cuisineHeart .fas{
 	color: red;
 }
 
+/* 熱銷美食 mark*/
 .cuisineMark{
 	position: absolute;
 	top: 0;
@@ -819,6 +799,7 @@ p{	font-size: 14px;
 	font-weight: bold;
 }
 
+/* 加入購物車按鈕設定 */
 .addcartBtn a{
 	display: block;
 	background-color: rgba(255,255,255,0);
@@ -834,19 +815,19 @@ p{	font-size: 14px;
 	border-radius: 5px;
 	border: 2px solid #ff5e45;
 }
-
 .addcartBtn a:hover,.addcartBtn a:focus{
 	background-color: #ff5e45;
 	color: #fff;
 }
-
 .addcartBtn .fa-shopping-cart{
 	margin-right: 5px;
 }
 
 
-/*	LOGIN.HTML & REGISTER.HTML 
-	common CSS setting */
+/* -- 2. ORDER.HTML CSS setting END*/
+
+/* -- 3.LOGIN.HTML & REGISTER.HTML 
+	  common CSS setting -- */
 
 .formMain{
 	margin: 40px auto;
@@ -880,13 +861,10 @@ p{	font-size: 14px;
 	margin: 5px auto;
 }
 
-
 .formSpecMsg{
 	color: #ff5e45;
 	font-size: 14px;
 }
-
-/* LOGIN.HTML Special CSS setting */
 
 .loginForm,.registerForm{
 	width: 50%;
@@ -895,7 +873,6 @@ p{	font-size: 14px;
 	box-shadow: 1px 1px 5px gray;
 	border-top: 5px solid #ff5e45;
 }
-
 .loginForm h5,.registerForm h5{
 	color: #3d1101;
 	font-weight: bold;
@@ -904,15 +881,20 @@ p{	font-size: 14px;
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-
 .loginForm label,.registerForm label{
 	color: #3d1101;
 }
 
+/* -- 3.LOGIN.HTML & REGISTER.HTML 
+	  common CSS setting END-- */
+
+
+/* -- 4.LOGIN.HTML Special CSS setting -- */
+
+/* login button */
 .loginFormBtn{
 	margin: 20px 2%;
 }
-
 .loginFormBtn .pure-button-register{
 	width: 48%;
 	background-color: #a09e9e;
@@ -922,13 +904,13 @@ p{	font-size: 14px;
 	width: 48%;
 	background-color: #f56c23;
 }
-
+/* loginFormBtn 改掉原本pure.css有的設定 */
 @media(max-width: 480px){
 	.loginFormBtn .pure-button-login[type="submit"]{
 		margin: 0;
 	}
 }
-
+/* login button RWD setting */
 @media(max-width: 414px){
 	.loginForm{
 		width: 90%;
@@ -937,22 +919,22 @@ p{	font-size: 14px;
 }
 
 
-/* REGISTER.HTML special CSS setting */
+/* -- 4.LOGIN.HTML Special CSS setting END　-- */
+
+/* -- 5.REGISTER.HTML Special CSS setting -- */
 
 .registerForm{
 	width: 90%;
 	margin: 40px 5%;
 }
-
 .registerForm li{
 	width: 50%;
-	/*margin: 40px 5%;*/
 	float: left;
 }
+
 .registerRuleMobile{
 	display: none;
 }
-
 .registerRule h6,.registerRuleMobile h6{
 	margin-bottom: 10px;
 }
@@ -962,28 +944,31 @@ p{	font-size: 14px;
 	font-size: 12px;
 }
 
+/* register button*/
 .registerFormBtn{
 	margin: 20px 2%;
 }
-
 .registerFormBtn .pure-button-register{
 	width: 48%;
 	background-color: #f56c23;
 	float: right;
 }
 
+/* registerFormBtn 改掉原本pure.css有的設定 */
 @media(max-width: 480px){
 	.registerFormBtn .pure-button-login[type="submit"]{
 		margin: 0;
 	}
 }
 
+/* register.html RWD button*/
 @media(max-width: 414px){
 	.registerForm li{
 		width: 98%;
 		/*margin: 40px 5%;*/
 		float: none;
 	}
+
 	.registerRule{
 		display: none;
 	}
@@ -993,13 +978,11 @@ p{	font-size: 14px;
 	.registerRuleMobile p{
 		display: none;
 	}
-
 	.registerRuleMobile a{
 		display: block;
 		padding: 10px 0;
 		background-color: #fff;
 		color: blue;
-		
 	}
 	.registerRuleMobile a:hover,.registerRuleMobile a:focus{
 		background-color: yellow;

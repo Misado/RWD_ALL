@@ -8,8 +8,8 @@ $(document).ready(function() {
 			delay: 5000,
 		},
 		breakpoints: {
-	    // when window width is <= 320px
-	    413: {
+	    // when window width is <= 414px
+	    414: {
 	      slidesPerView: 1,
 	      spaceBetween: 0
 	    },
@@ -32,22 +32,23 @@ $(document).ready(function() {
 		speed: 3000,
 	});
 
+	// navbar menu setting
 	$(".mainMenu > a").click(function(event) {
 		event.preventDefault();
-		/*$(".subMenu").slideToggle();*/
+		// submenu slideToggle
 		$(this).parent().find("ul").slideToggle();
+		// other submenu slideUp
 		$(this).parent().siblings().find("ul").slideUp();
 	});
 
+	/* hamburger menu setting */
 	$(".showmenu").click(function(event) {
 		event.preventDefault();
-		/* Act on the event */
 		$("body").toggleClass('mobile');
 	});
 
 	// Back to top of the page
 	$(".backtotopBtn").click(function(event) {
-		//remove link event
 		event.preventDefault();
 		$("html,body").animate({scrollTop:0}, 500);
 	});
@@ -57,6 +58,7 @@ $(document).ready(function() {
 		$(this).find("i").toggleClass('far fa-heart').toggleClass('fas fa-heart');
 	});
 
+	// 會員註冊條款 setting
 	$(".registerRuleMobile a").click(function(event) {
 		event.preventDefault();
 		$(".registerRuleMobile p").slideToggle();
