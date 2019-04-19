@@ -10,9 +10,6 @@
 	img{
 		border-radius: 50%;
 		border: 5px solid #fff;
-		&:hover{
-			box-shadow: 3px 3px 5px orange;
-		}
 	}
 	li{
 		@include display_columns(3,1%,1%);
