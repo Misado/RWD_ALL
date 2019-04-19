@@ -1,0 +1,202 @@
+
+/* -- 1. INDEX.HTML CSS setting -- */
+
+.featureDesc{
+	margin: 0 auto;
+	background-color: $main_bg_color;
+	h5{
+		text-align: center;
+	}
+	img{
+		border-radius: 50%;
+		border: 5px solid #fff;
+		&:hover{
+			box-shadow: 3px 3px 5px orange;
+		}
+	}
+	li{
+		@include display_columns(3,1%,1%);
+		text-align: center;
+		h4{
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		p{
+			text-align: justify;
+			padding: 5%;
+		}
+	}
+}
+
+.featureBlock{
+	width: 80%;
+	margin: 0 10%;
+	hr{
+		width: 50%;
+	}
+	li{
+		@include display_columns(3,30px,1%);
+		text-align: center;
+	}
+}
+
+.featureBlockHR{
+	width: 20%;
+}
+
+/* feature RWD setting */
+@include phone_grid{
+	.featureDesc{
+		li{
+			width: 98%;
+		}
+	}
+	.featureBlock{
+		li{
+			width: 98%;
+		}
+	}
+	.featureBlockHR{
+		display: none;
+	}
+}
+
+/* chef information */
+.chefInfo{
+	margin: 0 auto;
+	background-color: $main_font_color;
+	color: $main_bg_color;
+	li{
+		@include display_columns(2,2%,2%);
+		padding: 2%;
+		text-align: center;
+	}
+	p{
+		padding: 10px;
+		text-align: justify;
+	}
+	h4{
+		text-align: left;
+	}
+	span{
+		font-size: 16px;
+	}
+}
+
+/* chef information RWD setting */
+@include phone_grid{
+	.chefInfo{
+		li{
+			width: 96%;
+		}
+	}
+}
+
+/* customer's feed back */
+.feedbackMsg{
+	padding: 20px 0;
+	color: $main_font_color;
+	background-color: $main_bg_color;
+	h5{
+		text-align: center;
+	}
+}
+
+.feedbackMsgBlock{
+	img{
+		border-radius: 50%;
+		border: 2px solid #fff;
+	}
+	p{
+		text-indent: 0;
+		margin-top: 10px;
+		padding-left: 5.5em;
+	}
+}
+
+.feedbackTitle{
+	font-size: 16px;
+	padding-left: 0.5em;
+}
+
+.feedbackSign{
+	display: block;
+	text-align: right;
+	font-size: 12px;
+}
+
+/* feedback swiper's setting */
+@include swiper_setting;
+
+/* order form & map */
+.orderForm{
+	margin-top: 20px;
+	color: $main_font_color;
+	h5{
+		text-align: center;
+	}
+	li{
+		@include display_columns(2,20px,1%);
+	}
+	.inputSetting{
+		width: 98%;
+		margin: 1% 1%;
+		font-size: 14px;
+		font-family: $font_type
+	}
+	.radioItem{
+		label{
+			margin-left: 5px;
+		}
+		input[type='radio']{
+			&:after{
+				width: 17px;
+			    height: 17px;
+			    border-radius: 17px;
+			    top: -2px;
+			    left: -1px;
+			    position: relative;
+			    background-color: #d1d3d1;
+			    content: '';
+			    display: inline-block;
+			    visibility: visible;
+			    border: 2px solid white;
+			}
+			&:checked:after{
+				border-radius: 11px;
+			    background-color: #4a90e2;
+			    border: 5px solid #fff;
+			}
+		}
+	}
+	.pure-button-cancel{
+		background-color: #a09e9e;
+		color: #fff;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.pure-button-submit{
+		background-color: #f56c23;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@include phone_grid{
+	.orderForm{
+		li{
+			width: 98%;
+		}
+	}
+}
+
+.mapwrapper{
+	@include iframe_RWD_display(70%);
+}
+
+.orderformBtn{
+	float: right;
+}
+
+
+/* -- 1. INDEX.HTML CSS setting END -- */

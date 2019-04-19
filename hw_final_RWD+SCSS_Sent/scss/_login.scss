@@ -1,0 +1,30 @@
+
+/* -- 4.LOGIN.HTML Special CSS setting -- */
+
+/* login button */
+.loginFormBtn{
+	margin: 20px 2%;
+	.pure-button-register{
+		width: 48%;
+		background-color: #a09e9e;
+		color: #fff;
+	}
+	.pure-button-login{
+		width: 48%;
+		background-color: #f56c23;
+	}
+}
+
+@include purecss_reset_grid{
+	.loginForm{
+		width: 90%;
+		margin: 40px 5%;
+	}
+	.loginFormBtn{
+		.pure-button-login[type="submit"]{
+			margin: 0;
+		}
+	}
+}
+
+/* -- 4.LOGIN.HTML Special CSS setting END　-- */

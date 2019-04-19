@@ -1,0 +1,260 @@
+
+/* -- 2. ORDER.HTML CSS setting */
+
+.cartMain{
+	background-color: #main_bg_color;
+}
+
+/* left food menu */
+.foodMenu{
+	float: left;
+	width: 21%;
+	margin: 30px 2%;
+	span{
+		color: $main_font_color;
+		font-size: 20px;
+		margin-left: 10px;
+	}
+	i{
+		font-size: 20px;
+		color: $main_font_color;
+	}
+}
+
+/* left food menu RWD setting */
+@include phone_grid{
+	.foodMenu{
+		float: none;
+		width: 96%;
+		padding: 30px;
+	}
+}
+
+/* left food menu list*/
+.foodList{
+	margin-top: 20px;
+	li{
+		border-bottom: 1px solid $main_font_color;
+		a{
+			display: block;
+			padding: 10px;
+			color: $main_font_color;
+			text-decoration: none;
+			&:hover{
+				background-color: $main_font_color;
+				color: #fff;
+			}
+		}
+	}
+}
+
+/* right food content */
+.content{
+	float: left;
+	width: 71%;
+	margin: 20px 2%;
+}
+
+/* right food content RWD settomg */
+@include phone_grid{
+	.content{
+		float: none;
+		width: 96%;
+	}
+}
+
+.searchInput{
+	float: left;
+	margin-top: 10px;
+	.pure-form{
+		input{
+			float: left;
+			width: 250px;
+			font-size: 16px;
+			font-family: $font_type;
+			border: 1px solid $main_font_color;
+		}
+	}
+	.pure-button-submit{
+		float: left;
+		font-size: 16px;
+		color: #fff;
+		background-color: $main_font_color;
+	}
+}
+
+@include purecss_reset_grid{
+	.searchInput .pure-button-submit[type="submit"]{
+		margin: 0;
+	}
+}
+
+@include phone_grid{
+	.searchInput{
+		float: none;
+		width: 96%;
+		margin: 0 2%;
+		.pure-form{
+			input{
+				float: left;
+				width: 80%;
+			}
+		}
+	}
+}
+
+/* shopping cart section */
+.paycartSection{
+	ul{
+		float: right;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+	li{
+		float: left;
+		margin-bottom: 5px;
+	}
+}
+
+.gopayText{
+	padding-right: 10px;
+	border-right: 1px solid $main_font_color;
+	a{
+		display: block;
+		color: $main_font_color;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+
+.gopayImg{
+	position: relative;
+	margin-left: 10px;
+	i{
+		font-size: 24px;
+		color: $main_font_color;
+	}
+}
+
+.orderQuantity{
+	font-family: $font_eng_type;
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	background-color: #ff5e45;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 12px;
+	padding: 2px;
+}
+
+/* cuisine block setting */
+.cuisineShow{
+	margin: 20px auto;
+	text-align: center;
+	li{
+		@include display_columns(3,20px,1%);
+		padding-bottom: 10px;
+		position: relative;
+		background-color: #fff;
+		box-shadow: 1px 1px 5px gray;
+	}
+	img{
+		height: 120px;
+		width: auto;
+	}
+	h4{
+		margin-top: 10px;
+		margin-bottom: 5px;
+		white-space: nowrap;
+	}
+	hr{
+		width: 50%;
+		margin-bottom: 40px;
+	}
+}
+
+/* cuisine block RWD setting */
+@include tablet_grid{
+	.cuisineShow{
+		li{
+			width: 48%;
+		}
+	}
+}
+
+@include phone_grid{
+	.cuisineShow{
+		li{
+			float: none;
+			width: 98%;
+		}
+	}
+}
+
+.cuisineName{
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.cuisinePrice{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.cuisineHeart{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+	padding: 5px;
+	cursor: pointer;
+	font-size: 20px;
+	&:hover,&:focus{
+		color: $heart_color;
+	}
+	.fas{
+		color: $heart_color;
+	}
+}
+
+/* 熱銷美食 mark*/
+.cuisineMark{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 5px;
+	background-color: #00cc99;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* 加入購物車按鈕設定 */
+.addcartBtn{
+	a{
+		display: block;
+		background-color: rgba(255,255,255,0);
+		padding: 10px;
+		margin: 10px;
+		
+		color: $cart_color;
+		font-size: 14px;
+		text-align: center;
+		text-decoration: none;
+		font-weight: bold;
+		
+		border-radius: 5px;
+		border: 2px solid $cart_color;
+		&:hover,&:focus{
+			background-color: $cart_color;
+			color: #fff;
+		}
+	}
+	.fa-shopping-cart{
+		margin-right: 5px;
+	}
+}
+
+/* -- 2. ORDER.HTML CSS setting END */
