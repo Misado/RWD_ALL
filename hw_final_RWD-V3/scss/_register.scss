@@ -1,0 +1,90 @@
+
+/* -- 5.REGISTER.HTML Special CSS setting -- */
+
+.registerForm{
+	width: 90%;
+	margin: 40px 5%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	h5{
+		display: block;
+		width: 100%;
+	}
+	li{
+		width: 50%;
+		// flex-basis: 50px;
+		// flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		padding: 0 10px;
+	}
+	// li{
+	// 	width: 50%;
+	// 	float: left;
+	// }
+}
+
+.registerRuleMobile{
+	display: none;
+}
+
+.registerRule,.registerRuleMobile{
+	h6{
+		margin-bottom: 10px;
+	}
+	p{
+		// width: 90%;
+		margin: 10px auto;
+		font-size: 12px;
+	}
+}
+
+.registerFormBtn{
+	margin: 20px 2%;
+	.pure-button-register{
+		width: 48%;
+		background-color: #f56c23;
+		float: right;
+	}
+}
+
+@include purecss_reset_grid{
+	.registerFormBtn{
+		.pure-button-login[type="submit"]{
+			margin: 0;
+		}
+	}
+}
+
+@include medium_phone_grid{
+
+// @include phone_grid{
+	.registerForm{
+		li{
+			justify-content: center;
+			width: 98%;
+			float: none;
+		}
+	}
+
+	.registerRule{
+		display: none;
+	}
+	
+	.registerRuleMobile{
+		display: block;
+		p{
+			display: none;
+		}
+		a{
+			display: block;
+			padding: 10px 0;
+			background-color: #fff;
+			color: blue;
+			&:hover,&:focus{
+				background-color: yellow;
+			}
+		}
+	}
+}
