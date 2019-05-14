@@ -739,13 +739,31 @@ p {
 
 /* 熱銷美食 mark*/
 .cuisineMark {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
-  background-color: #00cc99;
-  color: #fff;
-  font-weight: bold; }
+  top: -70px;
+  right: -70px;
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 30px 30px 30px 30px;
+  border-color: transparent transparent #00cc99 transparent;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  .cuisineMark span {
+    position: absolute;
+    bottom: -20px;
+    white-space: nowrap;
+    color: #fff; }
 
 /* 加入購物車按鈕設定 */
 .addcartBtn a {

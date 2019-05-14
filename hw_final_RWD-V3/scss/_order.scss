@@ -222,13 +222,29 @@
 
 /* 熱銷美食 mark*/
 .cuisineMark{
+	box-sizing: content-box; // 要把RWD CSS RESET的設定拿掉，不然弄不出梯形
+
+	display: flex;
+	justify-content: center;
+
 	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 5px;
-	background-color: #00cc99;
-	color: #fff;
-	font-weight: bold;
+	top: -70px;
+	right: -70px;
+
+	// 梯形背景
+	width: 70px;
+	height: 70px;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 30px 30px 30px 30px;
+	border-color: transparent transparent #00cc99 transparent;
+	transform: rotate(45deg);
+	span{
+		position: absolute;
+		bottom: -20px;
+		white-space: nowrap;
+		color: #fff;
+	}
 }
 
 /* 加入購物車按鈕設定 */

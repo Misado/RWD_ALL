@@ -46,6 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* CSS reset for RWD */
+/* *,*:before,*:after{
+	box-sizing: border-box;
+} */
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/* -- CSS reset END -- */
 
 .wrap{
 	max-width: 800px;
@@ -174,14 +183,16 @@ table {
 }
 
 .specialBlock{
-	width: 200px;
-	height: 100px;
+	/* width: 200px;
+	height: 100px; */
+	width: 80px;
+	height: 10px;
 	/* background-color: #00cc99; */
 	transform: rotate(20deg);
 
 	/* border-width: 0px 100px 100px 100px; */
 	border-style: solid;
-	border-width: 0px 50px 70px 50px;
+	border-width: 0px 50px 40px 50px;
 	border-color: transparent transparent #007bff transparent;
 	/* box-shadow: 3px 3px 5px gray; */
 	position: relative;
@@ -191,4 +202,21 @@ table {
 	position: absolute;
 	bottom: -35px;
 	left: 50px;
+	white-space: nowrap;
+}
+
+.specialBlockTest{
+	position: relative;
+	width: 100px;
+	height: 30px;
+	border-style: solid;
+	border-width: 30px 60px 30px 60px;
+	border-color: red green #007bff purple;
+	transform: rotate(20deg);
+}
+
+
+.specialBlockTest span{
+	position: absolute;
+	bottom: -20px;
 }
