@@ -199,8 +199,11 @@
 }
 
 .cuisinePrice{
+	font-family: $font_eng_type;
 	font-size: 20px;
-	font-weight: bold;
+	strong{
+		font-weight: bold;
+	}
 }
 
 .cuisineHeart{
@@ -234,7 +237,6 @@
 	// 梯形背景
 	width: 70px;
 	height: 70px;
-	background-color: transparent;
 	border-style: solid;
 	border-width: 30px 30px 30px 30px;
 	border-color: transparent transparent #00cc99 transparent;

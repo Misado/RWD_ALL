@@ -75,5 +75,31 @@ $(document).ready(function() {
 	$(".chefInfoReadMore").click(function(event){
 		$(".chefSubInfo").slideToggle();
 	});
+
+	// 回上層的按鈕等到滑到banner下才出現
+	$(window).scroll(function(event) {
+		let scrollPos = $(window).scrollTop();
+		
+		let bannerShow = $(".banner").css("display");
+		let bannderMobileShow = $(".bannerMobile").css("display");
+
+		let bannerBottom = 0;
+		if ( bannerShow === "none" ){
+			let bannerMobileHeight = $(".bannerMobile").height()/2;
+			let bannerMobileTop = $(".bannerMobile").offset().top;
+			bannerBottom = bannerMobileTop+bannerMobileHeight;
+		} else if ( bannderMobileShow === "none" ){
+			let bannerHeight = $(".banner").height()/2;
+			let bannerTop = $(".banner").offset().top;
+			bannerBottom = bannerTop+bannerHeight;
+		}
+
+		if ( scrollPos >= bannerBottom ){
+			$(".backtotopBtn").show();
+		} else {
+			$(".backtotopBtn").hide();
+		}
+
+	});
 });
 

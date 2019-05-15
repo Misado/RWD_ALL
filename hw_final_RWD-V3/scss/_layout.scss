@@ -235,6 +235,9 @@ p{	font-size: 14px;
 
 /* back to the top of page*/
 .backtotopBtn{
+	display: none;
+	background-color: #fff;
+	border-radius: 50%;
 	position: fixed;
 	left: 20px;
 	bottom: 20px;
