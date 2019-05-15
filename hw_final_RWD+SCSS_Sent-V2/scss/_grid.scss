@@ -1,0 +1,24 @@
+@mixin tablet_grid{
+	@media(max-width: 768px){
+		@content;
+	}
+}
+
+@mixin phone_grid{
+	@media(max-width: 414px){
+		@content;
+	}
+}
+
+@mixin purecss_reset_grid{
+	@media(max-width: 480px){
+		/* 改掉原本pure.css有的設定 */
+		@content;
+	}
+}
+
+@mixin medium_phone_grid{
+	@media(max-width: 640px){
+		@content;
+	}
+}
