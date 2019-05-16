@@ -168,8 +168,9 @@
 			display: none;
 		}
 		.chefInfoReadMore{
-			display: block;
-			text-align: right;
+			display: flex;
+			// text-align: right;
+			align-self: flex-end;
 			color: gray;
 			cursor: pointer;
 		}

@@ -199,17 +199,7 @@ p {
   background-color: #000;
   position: relative;
   z-index: 1;
-  margin-top: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  margin-top: 60px; }
 
 .bannerMobile {
   display: none;
@@ -219,24 +209,17 @@ p {
   margin-top: 60px; }
 
 .bannerMask {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   color: #fff;
   position: absolute;
   z-index: 997;
+  bottom: 20%;
   width: 96%;
   margin: 0 2%;
   text-align: center; }
+  .bannerMask h2 {
+    margin-bottom: 10px; }
   .bannerMask h5 {
     line-height: 1.5; }
   .bannerMask .symbol {
@@ -247,16 +230,7 @@ p {
   .banner {
     display: none; }
   .bannerMobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
+    display: block; } }
 
 /* bottom of page setting */
 .footer {
@@ -429,8 +403,11 @@ p {
     .chefInfo .chefSubInfo {
       display: none; }
     .chefInfo .chefInfoReadMore {
-      display: block;
-      text-align: right;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-item-align: end;
+      align-self: flex-end;
       color: gray;
       cursor: pointer; } }
 
@@ -696,7 +673,8 @@ p {
     position: relative;
     background-color: #fff;
     -webkit-box-shadow: 1px 1px 5px gray;
-    box-shadow: 1px 1px 5px gray; }
+    box-shadow: 1px 1px 5px gray;
+    overflow: hidden; }
   .cuisineShow img {
     height: 120px;
     width: auto; }
@@ -746,12 +724,6 @@ p {
 .cuisineMark {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   position: absolute;
   top: -70px;
   right: -70px;
@@ -766,6 +738,7 @@ p {
   .cuisineMark span {
     position: absolute;
     bottom: -20px;
+    left: 5px;
     white-space: nowrap;
     color: #fff; }
 
