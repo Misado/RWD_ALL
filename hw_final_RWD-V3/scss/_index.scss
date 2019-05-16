@@ -135,16 +135,18 @@
 	color: $main_bg_color;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	.item{
 		flex-basis: 50px;
-	}
-	.chefImg{
 		flex-grow: 1;
 	}
+	// .chefImg{
+		
+	// }
 	.chefText{
 		display: flex;
 		flex-direction: column;
-		flex-grow: 1;
+		// flex-grow: 1;
 		padding: 40px;
 		// p{
 		// 	text-align: justify;
@@ -168,7 +170,7 @@
 			display: none;
 		}
 		.chefInfoReadMore{
-			display: flex;
+			display: block;
 			// text-align: right;
 			align-self: flex-end;
 			color: gray;
