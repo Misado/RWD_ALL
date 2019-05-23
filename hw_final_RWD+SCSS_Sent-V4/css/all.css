@@ -371,8 +371,7 @@ p {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .chefInfo .item {
-    -ms-flex-preferred-size: 50px;
-    flex-basis: 50px;
+    width: 50%;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
@@ -386,7 +385,11 @@ p {
     flex-direction: column;
     padding: 40px; }
   .chefInfo .chefInfoReadMore {
-    display: none; }
+    display: none;
+    text-decoration: none;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: gray; }
 
 @media (max-width: 768px) {
   .chefInfo {
@@ -401,11 +404,7 @@ p {
     .chefInfo .chefSubInfo {
       display: none; }
     .chefInfo .chefInfoReadMore {
-      display: block;
-      -ms-flex-item-align: end;
-      align-self: flex-end;
-      color: gray;
-      cursor: pointer; } }
+      display: block; } }
 
 /* customer's feed back */
 .feedbackMsg {

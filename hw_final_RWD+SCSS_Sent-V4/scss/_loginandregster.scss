@@ -1,0 +1,65 @@
+
+/* -- 3.LOGIN.HTML & REGISTER.HTML 
+	  common CSS setting -- */
+
+.formMain{
+	margin: 40px auto;
+	h4{
+		text-align: center;
+		font-weight: bold;
+		color: $main_font_color;
+	}
+}
+
+.formMainlogo{
+	@include logo(80%,48px,"../img/logo_l(null).svg");
+	margin: 10px 10%;
+}
+
+.formInput{
+	position: relative;
+	padding-left: 1em;
+}
+
+.formIcon{
+	font-size: 16px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 5px auto;
+}
+
+.formSpecMsg{
+	display: block;
+	margin: 10px 0;
+	color: #ff5e45;
+	font-size: 14px;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.loginForm,.registerForm{
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	margin: 40px 5%;
+	padding: 10px;
+	box-shadow: 1px 1px 5px gray;
+	border-top: 5px solid #ff5e45;
+	h5{
+		color: $main_font_color;
+		font-weight: bold;
+		font-family: $font_eng_type_bold;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	label{
+		color: $main_font_color;
+	}
+}
+
+/* -- 3.LOGIN.HTML & REGISTER.HTML 
+	  common CSS setting END-- */

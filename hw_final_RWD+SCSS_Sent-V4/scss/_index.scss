@@ -80,7 +80,8 @@
 	align-items: center;
 	flex-wrap: wrap;
 	.item{
-		flex-basis: 50px;
+		// flex-basis: 50px;
+		width: 50%;
 		flex-grow: 1;
 	}
 	.chefText{
@@ -90,6 +91,9 @@
 	}
 	.chefInfoReadMore{
 		display: none;
+		text-decoration: none;
+		align-self: flex-end;
+		color: gray;
 	}
 }
 
@@ -107,10 +111,6 @@
 		}
 		.chefInfoReadMore{
 			display: block;
-			// text-align: right;
-			align-self: flex-end;
-			color: gray;
-			cursor: pointer;
 		}
 	}
 }
