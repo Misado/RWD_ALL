@@ -77,11 +77,13 @@
 	background-color: $main_font_color;
 	color: $main_bg_color;
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	flex-wrap: wrap;
 	.item{
 		// flex-basis: 50px;
-		width: 50%;
+		width: 48%;
+		margin: 0 1%;
 		flex-grow: 1;
 	}
 	.chefText{
@@ -100,8 +102,11 @@
 @include tablet_grid{
 	.chefInfo{
 		flex-direction: column;
+		align-items: center;
 		.chefText{
 			padding: 10px;
+			width: 98%;
+			margin: 0 1%;
 		}
 		p{
 			font-size: 16px;

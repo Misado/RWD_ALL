@@ -365,13 +365,18 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .chefInfo .item {
-    width: 50%;
+    width: 48%;
+    margin: 0 1%;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1; }
@@ -396,9 +401,14 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
     .chefInfo .chefText {
-      padding: 10px; }
+      padding: 10px;
+      width: 98%;
+      margin: 0 1%; }
     .chefInfo p {
       font-size: 16px; }
     .chefInfo .chefSubInfo {
