@@ -81,7 +81,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	.item{
-		// flex-basis: 50px;
+		// flex-basis: 50px; // chrome用basis沒用，改用一般的width%
 		width: 48%;
 		margin: 0 1%;
 		flex-grow: 1;
@@ -103,10 +103,16 @@
 	.chefInfo{
 		flex-direction: column;
 		align-items: center;
+		.item{
+			width: 98%;
+			display: flex;
+			justify-content: center;
+		}
 		.chefText{
 			padding: 10px;
-			width: 98%;
-			margin: 0 1%;
+		}
+		h4{
+			text-align: center;
 		}
 		p{
 			font-size: 16px;
