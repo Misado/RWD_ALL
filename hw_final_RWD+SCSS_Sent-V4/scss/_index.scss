@@ -116,6 +116,9 @@
 		}
 		.chefInfoReadMore{
 			display: block;
+			&:hover,&:focus{
+				color: darkorange;
+			}
 		}
 	}
 }

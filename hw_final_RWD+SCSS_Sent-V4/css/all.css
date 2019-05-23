@@ -414,7 +414,9 @@ p {
     .chefInfo .chefSubInfo {
       display: none; }
     .chefInfo .chefInfoReadMore {
-      display: block; } }
+      display: block; }
+      .chefInfo .chefInfoReadMore:hover, .chefInfo .chefInfoReadMore:focus {
+        color: darkorange; } }
 
 /* customer's feed back */
 .feedbackMsg {
