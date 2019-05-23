@@ -77,6 +77,17 @@ $(document).ready(function() {
 		$(".chefSubInfo").slideToggle();
 	});
 
+	// 當螢幕解析度變成414px時，要停止原本cycle繼續在背後渲染；反之，則繼續。
+	// cycle 參數: http://malsup.com/jquery/cycle/options.html
+	window.onresize = function(){
+		let windowWidth = window.innerWidth;
+		if ( windowWidth <= 414 ){
+			$(".banner").cycle("pause"); // 停止cycle
+		} else{
+			$(".banner").cycle("resume"); // 啟動cycle
+		}
+	}
+
 	// 回上層的按鈕等到滑到banner下才出現
 	$(window).scroll(function(event) {
 		let scrollPos = $(window).scrollTop();
