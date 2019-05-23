@@ -78,17 +78,17 @@ $(document).ready(function() {
 	});
 
 	// 閱讀更多 slideToggle是直接改在html上，觸發過的話CSS的樣式吃不到，所以要用JS處理
-	window.onresize = function(){
-		let windowWidth = window.innerWidth;
-		// 視窗寬度<=768 閱讀更多要顯示，子資訊不要顯示
-		if ( windowWidth <= 768 ){
-			$(".chefSubInfo").css("display","none");
-			$(".chefInfoReadMore").css("display","block");
-		} else{
-			$(".chefSubInfo").css("display","block");
-			$(".chefInfoReadMore").css("display","none");
-		}
-	}
+	// window.onresize = function(){
+	// 	let windowWidth = window.innerWidth;
+	// 	// 視窗寬度<=768 閱讀更多要顯示，子資訊不要顯示
+	// 	if ( windowWidth <= 768 ){
+	// 		$(".chefSubInfo").css("display","none");
+	// 		$(".chefInfoReadMore").css("display","block");
+	// 	} else{
+	// 		$(".chefSubInfo").css("display","block");
+	// 		$(".chefInfoReadMore").css("display","none");
+	// 	}
+	// }
 
 	// 回上層的按鈕等到滑到banner下才出現
 	$(window).scroll(function(event) {
